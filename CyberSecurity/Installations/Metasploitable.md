@@ -30,6 +30,10 @@ Convert Metasploitable.vmdk to qcow2 for proxmox to understand
 - move one folder up
 > mv Metasploitable.qcow2 ../
 
+if a Error:storage 'local' does not support content-type 'images' appear,
+- Go to datacenter, local or where vzdump file is
+  - edit to accept disk image
+
 At this point you can just detele the zip and the folder
 - Sadly vim is not on there so you have to use nano to change config
 > nano /etc/pve/qemu-server/{vmid}.conf
