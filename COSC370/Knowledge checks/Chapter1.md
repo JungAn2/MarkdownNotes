@@ -463,4 +463,4 @@ Match the name of an Internet layer with unit of data that is exchanged among pr
 Consider the figure below, showing a link-layer frame heading from a host to a router.  There are three header fields shown.  Match the name of a header with a header label shown in the figure.
 ![](./chapter1photo/1.5.3.jpg)
 
-- Header H~1~
+- Header H<sub>1</sub>
