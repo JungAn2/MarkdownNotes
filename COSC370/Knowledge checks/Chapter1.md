@@ -464,3 +464,68 @@ Consider the figure below, showing a link-layer frame heading from a host to a r
 ![](./chapter1photo/1.5.3.jpg)
 
 - Header H<sub>1</sub>
+    > Link layer
+- Header H<sub>2</sub>
+    > Network layer
+- Header H<sub>3</sub>
+    > Transport layer
+
+# WHAT IS "ENCAPSULATION"?
+
+
+Which of the definitions below describe what is meant by the term "encapsulation"?
+
+
+- Determining the name of the destination host, translating that name to an IP address and then placing that value in a packet header field.
+
+
+- > Taking data from the layer above, adding header fields appropriate for this layer, and then placing the data in the payload field of the “packet” for that layer.
+
+
+- Receiving a “packet” from the layer below, extracting the payload field, and after some internal actions possibly delivering that payload to an upper layer protocol.
+
+
+- Computing the sum of all of the bytes within a packet and placing that value in the packet header field.
+
+
+- Starting a transport layer timer for a transmitted segment, and then if an ACK segment isn’t received before the timeout, placing that segment in a retransmission queue.
+
+# 1.6
+# SECURITY DEFENSES.
+
+
+  Match the description of a security defense with its name.
+
+  - Specialized “middleboxes” filtering or blocking traffic, inspecting packet contents inspections
+    > Firewall
+  - Provides confidentiality by encoding contents
+    > Encryption
+- Used to detect tampering/changing of message contents, and to identify the originator of a message.
+    > Digital signatures
+- Limiting use of resources or capabilities to given users.
+    > Access control
+- Proving you are who you say you are.
+    > Authentication
+
+# 1.7
+# NETWORKING HISTORY - WHEN DID IT HAPPEN?
+
+
+Match the networking event with the time frame when the event occurred.
+
+- Early studies of packet switching by Baran, Davies, Kleinrock.
+    > Early 1960's
+- First ARPAnet node operational.
+    > Late 1960's
+- Internetting: DARPA researchers connect three networks together.
+    > 1970's
+- The Internet Protocol (IP) is standardized in RFC 791.
+    > Early 1980's
+- Congestion control is added to the TCP protocol.
+    > Late 1980's
+- The WWW starts up (note: the WWW design started at the end of previous decade).
+    > 1990's
+- Software-defined networking begins.
+    > 2000 - 2010
+- The number wireless Internet-connected devices surpasses the number of connected wired devices.
+    > 2010 - 2020
