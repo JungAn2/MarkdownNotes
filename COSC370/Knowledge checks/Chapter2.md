@@ -563,11 +563,363 @@ Which of the following characteristics apply to both HTTP and SMTP? Note: check 
 . Match the function of a server to a given type of DNS server in the  DNS server hierarchy.
 
 - Provides authoritative hostname to IP mappings for organization’s named hosts.
-    - 
+    - ```Authoritative DNS server```
 - Replies to DNS query by local host, by contacting other DNS servers to answer the query.
-
+    - ```Local DNS server```
 - Responsible for a domain (e.g., *.com, *.edu); knows how to contact authoritative name servers.
-
+    - ```Top Level Domain (TLD) servers```
 - Highest level of the DNS hierarchy, knows how to reach servers responsible for a given domain (e.g., *.com, *.edu).
+    - ```DNS root servers```
 
+# WHY DOES THE DNS PERFORM CACHING?
+
+
+What is the value of caching in the local DNS name server? Check all that apply.
+
+
+- DNS caching provides the ability to serve as authoritative name server for multiple organizations.
+
+
+- ```DNS caching results in less load elsewhere in DNS, when the reply to a query is found in the local cache.```
+
+
+- ```DNS caching provides for faster replies, if the reply to the query is found in the cache.```
+
+
+- DNS caching provides prioritized access to the root servers, since the DNS request is from a local DNS cache.
+
+# WHAT'S IN THE DNS TYPE A RESOURCE RECORD?
+
+
+What information does the type “A” resource record hold in the DNS database? Check all that apply.
+
+
+- A domain name and the name of the authoritative name server for that domain.
+
+
+- A name and the name of the SMTP server associated with that name.
+
+
+- An alias name and a true name for a server.
+
+
+- ```A hostname and an IP address.```
+
+# DNS IN ACTION (1).
+
+
+Suppose that the local DNS server caches all information coming in from all root, TLD, and authoritative DNS servers for 20 time units. (Thus, for example, when a root server returns the name and address of a TLD server for .com, the cache remembers that this is the TLD server to use to resolve a .com name).  Assume also that the local cache is initially empty, that iterative DNS queries are always used, that DNS requests are just for name-to-IP-address translation, that 1 time unit is needed for each server-to-server or host-to-server (one way) request/response, and that there is only one authoritative name server (each) for any .edu or .com domain.
+![](./chapter2photo/2.4.4.jpg)
+
+Consider the following DNS requests, made by the local host at the given times:
+
+t=0, the local host requests that the name gaia.cs.umass.edu be resolved to an IP address. <br>
+t=1, the local host requests that the name icann.org be resolved to an IP address. <br>
+t=5, the local host requests that the name cs.umd.edu be resolved to an IP address. (Hint: be careful!)<br>
+t=10, the local host again requests that the name gaia.cs.umass.edu be resolved to an IP address. <br>
+t=12, the local host requests that the name cs.mit.edu be resolved to an IP address. <br>
+t=30, the local host again requests that the name gaia.cs.umass.edu be resolved to an IP address. (Hint: be careful!)<br>
+Which of the requests require 8 time units to be resolved?<br>
+
+
+- The request at t=12.
+
+
+- The request at t=10.
+
+
+- ```The request at t=30.```
+
+
+- The request at t=5.
+
+
+- ```The request at t=0.```
+
+
+- ```The request at t=1.```
+
+# DNS IN ACTION (2).
+
+
+Suppose that the local DNS server caches all information coming in from all root, TLD, and authoritative DNS servers for 20 time units. (Thus, for example, when a root server returns the name and address of a TLD server for .com, the cache remembers that this is the TLD server to use to resolve a .com name).  Assume also that the local cache is initially empty, that iterative DNS queries are always used, that DNS requests are just for name-to-IP-address translation, that 1 time unit is needed for each server-to-server or host-to-server (one way) request/response, and that there is only one authoritative name server (each) for any .edu or .com domain.
+![](./chapter2photo/2.4.4.jpg)
+
+Consider the following DNS requests, made by the local host at the given times:
+
+t=0, the local host requests that the name gaia.cs.umass.edu be resolved to an IP address. <br>
+t=1, the local host requests that the name icann.org be resolved to an IP address. <br>
+t=5, the local host requests that the name cs.umd.edu be resolved to an IP address. (Hint: be careful!)<br>
+t=10, the local host again requests that the name gaia.cs.umass.edu be resolved to an IP address. <br>
+t=12, the local host requests that the name cs.mit.edu be resolved to an IP address. <br>
+t=30, the local host again requests that the name gaia.cs.umass.edu be resolved to an IP address. (Hint: be careful!)<br>
+Which of the requests require 6 time units to be resolved?<br>
+
+- ```The request at t=12.```
+
+
+- The request at t=10.
+
+
+- The request at t=30.
+
+
+- ```The request at t=5.```
+
+
+- The request at t=0.
+
+
+- The request at t=1.
+
+# DNS IN ACTION (3).
+
+
+Suppose that the local DNS server caches all information coming in from all root, TLD, and authoritative DNS servers for 20 time units. (Thus, for example, when a root server returns the name and address of a TLD server for .com, the cache remembers that this is the TLD server to use to resolve a .com name).  Assume also that the local cache is initially empty, that iterative DNS queries are always used, that DNS requests are just for name-to-IP-address translation, that 1 time unit is needed for each server-to-server or host-to-server (one way) request/response, and that there is only one authoritative name server (each) for any .edu or .com domain.
+![](./chapter2photo/2.4.4.jpg)
+
+Consider the following DNS requests, made by the local host at the given times:
+
+t=0, the local host requests that the name gaia.cs.umass.edu be resolved to an IP address. <br>
+t=1, the local host requests that the name icann.org be resolved to an IP address. <br>
+t=5, the local host requests that the name cs.umd.edu be resolved to an IP address. (Hint: be careful!)<br>
+t=10, the local host again requests that the name gaia.cs.umass.edu be resolved to an IP address. <br>
+t=12, the local host requests that the name cs.mit.edu be resolved to an IP address. <br>
+t=30, the local host again requests that the name gaia.cs.umass.edu be resolved to an IP address. (Hint: be careful!)<br>
+Which of the requests require 2 time units to be resolved?<br>
+
+- The request at t=12.
+
+
+- ```The request at t=10.```
+
+
+- The request at t=30.
+
+
+- The request at t=5.
+
+
+- The request at t=0.
+
+
+- The request at t=1.
+
+# THE LOCAL DNS SERVER.
+
+
+Check all of the phrases below that state a true property of a local DNS server.
+
+
+- ```The local DNS server record for a remote host is sometimes different from that of the authoritative server for that host.```
+
+
+- ```The local DNS server can decrease the name-to-IP-address resolution time experienced by a querying local host over the case when a DNS is resolved via querying into the DNS hierarchy.```
+
+
+- The local DNS server holds hostname-to-IP translation records, but not other DNS records such as MX records.
+
+
+- The local DNS server is only contacted by a local host if that local host is unable to resolve a name via iterative or recursive queries into the DNS hierarchy.
+
+# THE DNS AUTHORITATIVE NAME SERVER.
+
+
+What is the role of an authoritative name server in the DNS? (Check all that apply)
+
+
+- It is a local (to the querying host) server that caches name-to-IP address translation pairs, so it can answer authoritatively and can do so quickly.
+
+
+- It provides a list of TLD servers that can be queried to find the IP address of the DNS server that can provide the definitive answer to this query.
+
+
+- It provides the IP address of the DNS server that can provide the definitive answer to the query.
+
+
+- ```It provides the definitive answer to the query with respect to a name in the authoritative name server's domain.```
+
+# No 2.5
+# 2.6
+# .6-4
+
+
+Manifest file. What is the purpose of a manifest file in a streaming multimedia setting?
+
+
+- To let a OTT (Over-the-top) video server know the video that the client wants to view.
+
+
+- To allow a client to reserve bandwidth along a path from a server to that client, so the client can view a stream video without impairment.
+
+
+- Allows a video service to log the video and the server from which a client streams a video.
+
+
+- ```To let a client know where it can retrieve different video segments, encoded at different rates```
+
+# CDNS.
+
+
+What approach is taken by a CDN to stream content to hundreds of thousands of simultaneous users?
+
+
+- Allow client devices to send requested content to each other, in order to offload the CDN infrastructure.
+
+
+- ```Store/serve multiple copies of videos at multiple geographically distributed sites.```
+
+
+- Proactively push videos to a client device before they’re requested, using machine learning to predict requested videos.
+
+
+- Serve video from a single central “mega-server” with ultra-high-speed network connectivity, and high-speed storage.
+
+# STREAMING VIDEO DEFINITIONS
+
+
+. Match the definition/function of an element or approach in a networked streaming video system, with its name.
+
+- A unit of video, each of which may be encoded at multiple different rates, stored in different files.
+    - ```Chunk```
+- A file containing the location and encoding rate of files corresponding to video segments in a video.
+    - ```Manifest```
+- An approach that allows a client to adapt the encoding rate of retrieved video to network congestion conditions.
+    - ```DASH```
+- A CDN approach that stores content in access networks, close to clients.
+    - ```Enter deep```
+
+# WHAT IS DASH?
+
+
+In DASH (Dynamic, Adaptive Streaming over HTTP), a server divides a video file into chunks that ... (pick best completion from below)
+
+
+- ... allow premium users to avoid watching chunks that contain commercials.
+
+
+- ```... are stored, each encoded at multiple rates (video quality).  The client plays the video chunk-by-chunk, with each chunk requested at encoding rate that fits the available bandwidth at the time.```
+
+
+- ... are download smallest-chunk-first in order to maximize the number of chunks received.
+
+
+- ... are stored, each encoded at multiple rates (video quality).  The client receives multiple video chunks (encoded at different rates) and plays out the chunks that best fit the screen size.
+
+
+- ... are downloaded just before their playout time.  Chunking is used primarily because a viewer may jump around (e.g., fast forward) in a video.
+
+# 2.7
+# UDP SOCKETS.
+
+
+Which of the following characteristics below are associated with a UDP socket? Check one or more that apply.
+
+
+
+
+- ```socket(AF_INET, SOCK_DGRAM) creates this type of socket```
+
+
+- a server can perform an accept() on this type of socket
+
+
+- when contacted, the server will create a new server-side socket to communicate with that client
+
+
+- ```the application must explicitly specify the IP destination address and port number for each group of bytes written into a socket```
+
+
+- ```provides unreliable transfer of a groups of bytes (“a datagram”), from client to server```
+
+
+- socket(AF_INET, SOCK_STREAM) creates this type of socket
+
+
+- provides reliable, in-order byte-stream transfer (a “pipe”), from client to server
+
+
+- ```data from different clients can be received on the same socket```
+
+# TCP SOCKETS.
+
+
+Which of the following characteristics below are associated with a TCP socket? Check one or more that apply.
+
+
+
+
+- provides unreliable transfer of a group of bytes (a “datagram”), from client to server
+
+
+- ```when contacted, the server will create a new server-side socket to communicate with that client```
+
+
+- ```socket(AF_INET, SOCK_STREAM) creates this type of socket```
+
+
+- data from different clients can be received on the same socket
+
+
+- socket(AF_INET, SOCK_DGRAM) creates this type of socket
+
+
+- ```a server can perform an accept() on this type of socket```
+
+
+- ```provides reliable, in-order byte-stream transfer (a “pipe”), from client to server```
+
+
+- the application must explicitly specify the IP destination address and port number for each group of bytes written into a socket
+
+# SERVER REPLY (UDP).
+
+
+How does the networked application running on a server know the client IP address and the port number to reply to in response to a received datagram?
+
+
+- ```The  application code at the server determines client IP address and port # from the initial segment sent by client, and must explicitly specify these values when sending into a socket back to that client.```
+
+
+- The server will know the port number being used by the client since all services have a well-known port number.
+
+
+- The server will query the DNS to learn the IP address of the client.
+
+
+- As the result of performing the accept() statement, the server has created a new socket that is bound to that specific client, and so sending into this new socket (without explicitly specifying the client IP address and port number) is sufficient to ensure that the sent data will be addressed to the correct client.
+
+# HOW MANY SOCKETS?
+
+
+Suppose a Web server has five ongoing connections that use TCP receiver port 80, and assume there are no other TCP connections (open or being opened or closed) at that server.  How many TCP sockets are in use at this server?
+
+
+- 5
+
+
+- 1
+
+
+- ```6```
+
+
+- 4
+
+# SOCKET CONNECT().
+
+
+What happens when a socket connect() procedure is called/invoked?
+
+
+- This causes the client to reach out to a TCP server to establish a connection between that client and the server. If there is already one or more servers on this connection, this new server will also be added to this connection.
+
+
+- This causes the client to reach out to a TCP server to establish a connection between that client and the server. There can be at most one server on the connection.
+
+
+- ```This procedure creates a new socket at the client, and connects that socket to the specified server.```
+
+
+- This causes the server to create a connection with a TCP client.  The server does so by creating a new socket for communication back to that client.
 
