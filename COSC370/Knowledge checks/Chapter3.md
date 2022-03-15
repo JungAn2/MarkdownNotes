@@ -1,5 +1,4 @@
-# 3.1
-# LOCATION OF TRANSPORT-LAYER FUNCTIONALITY.
+# 3.1-1 LOCATION OF TRANSPORT-LAYER FUNCTIONALITY.
 
 
 Where is transport-layer functionality primarily implemented?
@@ -13,7 +12,7 @@ Where is transport-layer functionality primarily implemented?
 
 - Transport layer functions are implemented primarily at each end of a physical link connecting one host/router/switch to another one host/router/switch.
 
-# TRANSPORT-LAYER FUNCTIONALITY.
+# 3.1-2 TRANSPORT-LAYER FUNCTIONALITY.
 
 
 True or False: The transport layer provides for host-to-host delivery service?
@@ -25,7 +24,7 @@ True or False: The transport layer provides for host-to-host delivery service?
 - False
 
 
-# TRANSPORT LAYER SERVICES USING TCP.
+# 3.1-3 TRANSPORT LAYER SERVICES USING TCP.
 
 
   Check all of the services below that are provided by the TCP protocol.
@@ -54,7 +53,7 @@ True or False: The transport layer provides for host-to-host delivery service?
 
 - A message abstraction, that preserves boundaries between message data sent in different socket send calls at the sender.
 
-# TRANSPORT-LAYER SERVICES USING UDP.
+# 3.1-4 TRANSPORT-LAYER SERVICES USING UDP.
 
 
   Check all of the services below that are provided by the UDP protocol.
@@ -84,7 +83,7 @@ True or False: The transport layer provides for host-to-host delivery service?
 - In-order data delivery
 
 
-# NETWORK-LAYER FUNCTIONALITY.
+# 3.1-5 NETWORK-LAYER FUNCTIONALITY.
 
 
 The transport layer sits on top of the network layer, and provides its services using the services provided to it by the network layer.  Thus it’s important that we know what is meant by the network layer’s “best effort” delivery service.  True or False:
@@ -98,8 +97,7 @@ The network layer’s best-effort delivery service means that IP makes its “be
 
 - Nope. The network layer’s best effort service doesn’t really provide much service at all, does it?
 
-# 3.2
-# TRANSPORT-LAYER DEMULTIPLEXING.
+# 3.2-1 TRANSPORT-LAYER DEMULTIPLEXING.
 
 
 What is meant by transport-layer demultiplexing?
@@ -133,7 +131,7 @@ What is meant by transport-layer multiplexing?
 
  -Receiving a transport-layer segment from the network layer, extracting the payload, determining the destination IP address for the data, and then passing the segment and the IP address back down to the network layer.
 
- # MULTIPLEXING/DEMULTIPLEXING: UDP PORT NUMBERS.
+ # 3.2-2 MULTIPLEXING/DEMULTIPLEXING: UDP PORT NUMBERS.
 
 
 True or False:  When multiple UDP clients send UDP segments to the same destination port number at a receiving host, those segments (from different senders) will always be directed to the same socket at the receiving host.
@@ -145,7 +143,7 @@ True or False:  When multiple UDP clients send UDP segments to the same destinat
 - ```True```
 
 
-# MULTIPLEXING/DEMULTIPLEXING: TCP PORT NUMBERS.
+# 3.2-3 MULTIPLEXING/DEMULTIPLEXING: TCP PORT NUMBERS.
 
 
 True or False:  When multiple TCP clients send TCP segments to the same destination port number at a receiving host, those segments (from different senders) will always be directed to the same socket at the receiving host.
@@ -156,7 +154,7 @@ True or False:  When multiple TCP clients send TCP segments to the same destinat
 
 - ```False```
 
-# MULTIPLEXING UDP WITH IDENTICAL PORT NUMBERS.
+# 3.2-4 MULTIPLEXING UDP WITH IDENTICAL PORT NUMBERS.
 
 
 True or False:  It is possible for two UDP segments  to be sent from the same socket with source port 5723 at a server to two different clients.
@@ -167,7 +165,7 @@ True or False:  It is possible for two UDP segments  to be sent from the same so
 
 - ```True```
 
-# MULTIPLEXING TCP WITH IDENTICAL PORT NUMBERS.
+# 3.2-5 MULTIPLEXING TCP WITH IDENTICAL PORT NUMBERS.
 
 
 True or False:  It is possible for two TCP segments with source port 80 to be sent by the sending host to different clients.
@@ -178,8 +176,7 @@ True or False:  It is possible for two TCP segments with source port 80 to be se
 
 - ```True```
 
-# 3.3
-# DOES UDP PRESERVE APPLICATION-LAYER MESSAGE BOUNDARIES?
+# 3.3-1 DOES UDP PRESERVE APPLICATION-LAYER MESSAGE BOUNDARIES?
 
 
 True or False:  On the sending side, the UDP sender will take each application-layer chunk of data written into a UDP socket and send it in a distinct UDP datagram. And then on the receiving side, UDP will deliver a segment’s payload into the appropriate socket, preserving the application-defined message boundary.
@@ -190,7 +187,7 @@ True or False:  On the sending side, the UDP sender will take each application-l
 
 - ```True```
 
-# UDP header fields. Which of the fields below are in a UDP segment header? [Hint: note the use of the word "header" in this question statement.]
+# 3.3-2 UDP header fields. Which of the fields below are in a UDP segment header? [Hint: note the use of the word "header" in this question statement.]
 
 
 - Source IP address
@@ -217,7 +214,7 @@ True or False:  On the sending side, the UDP sender will take each application-l
 - Sequence number
 
 
-# UDP SEGMENT LENGTH FIELD.
+# 3.3-3 UDP SEGMENT LENGTH FIELD.
 
 
 Why is the UDP header length field needed?
@@ -234,7 +231,7 @@ Why is the UDP header length field needed?
 
 - (a) and (b) above
 
-# INTERNET CHECKSUM AND UDP.
+# 3.3-4 INTERNET CHECKSUM AND UDP.
 
 
 Over what set of bytes is the checksum field in the UDP header computed over?
@@ -249,7 +246,7 @@ Over what set of bytes is the checksum field in the UDP header computed over?
 - Just the UDP header but not the payload.
 
 
-# COMPUTING THE INTERNET CHECKSUM (1).
+# 3.3-5COMPUTING THE INTERNET CHECKSUM (1).
 
 
 Compute the Internet checksum value for these two 16-bit words: 11110101 11010011 and 10110011 01000100
@@ -269,7 +266,7 @@ Compute the Internet checksum value for these two 16-bit words: 11110101 1101001
 - ```01010110 11100111```
 
 
-# COMPUTING THE INTERNET CHECKSUM (2).
+# 3.3-6 COMPUTING THE INTERNET CHECKSUM (2).
 
 
 Compute the Internet checksum value for these two 16-bit words: 01000001 11000100 and 00100000 00101011
@@ -288,7 +285,7 @@ Compute the Internet checksum value for these two 16-bit words: 01000001 1100010
 
 - 10011110 00010001
 
-# UDP CHECKSUM: HOW GOOD IS IT?
+# 3.3-7 UDP CHECKSUM: HOW GOOD IS IT?
 
 
 True or False:  When computing the Internet checksum for two numbers, a single flipped bit (i.e., in just one of the two numbers) will always result in a changed checksum.
@@ -299,7 +296,7 @@ True or False:  When computing the Internet checksum for two numbers, a single f
 
 - ```True```
 
-# UDP CHECKSUM: HOW GOOD IS IT?
+# 3.3-8 UDP CHECKSUM: HOW GOOD IS IT?
 
 
 True or False: When computing the Internet checksum for two numbers, a single flipped bit in each of the two numbers will always result in a changed checksum.
@@ -310,7 +307,7 @@ True or False: When computing the Internet checksum for two numbers, a single fl
 
 - ```False```
 
-# IP ADDRESSES AND PORT NUMBERS IN A UDP SEGMENT SENT IN REPLY. 
+# 3.3-9 IP ADDRESSES AND PORT NUMBERS IN A UDP SEGMENT SENT IN REPLY. 
 
 
 Suppose a UDP segment (A in the figure below) arrives at a host with an IP address of 128.119.40.186. The source port in the UDP segment is 4829 and the destination port is 3546. The IP address of the sending host is 60.54.75.24.
@@ -333,9 +330,411 @@ The destination IP address of the IP datagram containing the UDP segment (B) sen
 
 
 - The source port number of the UDP segment (B) sent in reply is: 
-
+    - ```3546```
 - The source IP address of the IP datagram containing the UDP segment (B) sent in reply is: 
-
+    - ```128.119.40.186```
 - The destination port number of the UDP segment (B) sent in reply  is:
-
+    - ```4829```
 - The destination IP address of the IP datagram containing the UDP segment (B) sent in reply is: 
+    - ```60.54.75.24```
+
+# 3.4-1 RELIABLE DATA TRANSFER PROTOCOL MECHANISMS.
+
+
+Consider the purposes/goals/use of different reliable data transfer protocol mechanisms. For the given purpose/goal/use match it to the RDT mechanism that is used to implement the given purpose/goal/use.
+
+- Lets the sender know that a packet was NOT received correctly at the receiver.
+    - ```NAK```
+- Used by sender or receiver to detect bits flipped during a packet’s transmission.
+    - ```Checksum```
+- Allows for duplicate detection at receiver.
+    - ```Sequence number```
+- Lets the sender know that a packet was received correctly at the receiver.
+    - ```ACK```
+- Allows the receiver to eventually receive a packet that was corrupted or lost in an earlier transmission.
+    - ```Retransmission```
+
+# 3.4-2 THE RDT 2.0 PROTOCOL.
+
+
+Consider the rdt 2.0 sender and receiver shown below, with FSM transitions at the sender labeled S1, S2, and S3; and receiver transitions labeled R1 and R2.
+
+Which of the following sequences of transitions could possibly occur as a result of an initial rdt_send() call at the sender, and possible later message corruption and subsequent error recovery.
+![](./chapter3photo/3.4.2a.jpg)
+![](./chapter3photo/3.4.2b.jpg)
+
+
+
+- S1, R1, S2, R1, S3
+
+
+- ```S1, R1, S2```
+
+
+- ```S1, R2, S3```
+
+
+- S1, R1, S3
+
+
+- S1, R2, S2
+
+
+- S1, S2, S3
+
+
+- ```S1, R1, S2, R2,S3```
+
+# 3.4-3 THE RDT 2.1 PROTOCOL (A).
+
+
+Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
+
+![](./chapter3photo/3.4.3.jpg)
+
+
+Suppose that no channel errors occur.  A sequence of interleaved sender and receiver transitions is given below. Transitions S1 and S4 are already provided.  Choose the sender or receiver transition for the unlabeled transitions x1, x2, x3, and x4 below to indicate the time-ordered sequence of transitions (interleaved sender and receiver transitions) that will result in two messages being delivered at the receiver, with the sender and receiver returning to their initial states (again, given that no channel errors occur). 
+
+S1, x1, x2, S4, x3, x4
+
+- transition x1
+    - ```R1```
+- transition x2
+    - ```S3```
+- transition x3
+    - ```R4```
+- transition x4
+    - ```S6```
+
+# 3.4-4 THE RDT 2.1 PROTOCOL (B).
+
+
+ Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
+
+![](./chapter3photo/3.4.3.jpg)
+
+Suppose that the initial message transmission by the sender is corrupted, but that no other message transmissions are corrupted.  Match the unlabeled transitions x1, x2, x3, x4, x5 in the time-ordered sequence of transitions below (interleaved sender and receiver transitions) that will occur following the initial S1 transition (which is corrupted), that will result in two messages being delivered at the receiver, with the sender and receiver returning to their initial states (again, given that the initial message transmission by the sender is corrupted). Note that transitions S1, S4, and S6 are already provided below.
+
+S1 (message corrupted), x1, x2, x3, x4, S4, x5, S6.
+
+- transition x1
+    - ```R6```
+- transition x2
+    - ```S2```
+- transition x3
+    - ```R1```
+- transition x4
+    - ```S3```
+- transition x5
+    - ```R4```
+
+# 3.4-5 THE RDT 2.1 PROTOCOL (C).
+
+
+ Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
+
+![](./chapter3photo/3.4.3.jpg)
+
+Suppose that the first packet from the sender is correctly received at the receiver but that ACK message sent from receiver-to-sender is corrupted; all other messages (before or after that ACK) are transmitted error-free.  Match the unlabeled transitions x1, x2, x3, x4, x5 in the time-ordered sequence of transitions below (interleaved sender and receiver transitions) that will occur following the initial S1 transition, which is followed by a corrupted ACK transmission, that will result in a message being delivered at the receiver, with the sender and receiver returning to their initial states. Note that some transitions are already provided below.
+
+S1, x1 (ACK corrupted), x2, x3, x4, S4, x5, S6.
+
+- transition x1
+
+- transition x2
+
+- transition x3
+
+- transition x4
+
+- transition x5
+
+
+# 3.4-6 CUMULATIVE ACK.
+
+
+What is meant by a cumulative acknowledgment, ACK(n)?
+
+
+- A cumulative ACK(n) allows the receiver to let the sender know that it has not yet received an ACK for packet with sequence number n.
+
+
+- ```A cumulative ACK(n) acks all packets with a sequence number up to and including n as being received.```
+
+
+- A cumulative ACK(n) allows the receiver to let the sender know that it has not received any packets with a new sequence number since the last cumulative ACK(n) was sent.
+
+# 3.4-7 STOP-AND-WAIT: CHANNEL UTILIZATION.
+
+
+Suppose a packet is 10K bits long, the channel transmission rate connecting a sender and receiver is 10 Mbps, and the round-trip propagation delay is 10 ms.  What is the maximum channel utilization of a stop-and-wait protocol for this channel?
+
+
+- 1.0
+
+
+- .001
+
+
+- 10.0
+
+
+- .01
+
+
+- ```.1```
+
+# 3.4-8 CHANNEL UTILIZATION WITH PIPELINING.
+
+
+Suppose a packet is 10K bits long, the channel transmission rate connecting a sender and receiver is 10 Mbps, and the round-trip propagation delay is 10 ms.  What is the channel utilization of a pipelined protocol with an arbitrarily high level of pipelining for this channel?
+
+
+- ```1.0```
+
+
+- 0.01
+
+
+- 10.0
+
+
+- 0.001
+
+
+- 0.1
+
+# 3.4-9 CHANNEL UTILIZATION WITH PIPELINING (MORE).
+
+
+Suppose a packet is 10K bits long, the channel transmission rate connecting a sender and receiver is 10 Mbps, and the round-trip propagation delay is 10 ms.  How many packets can the sender transmit before it starts receiving acknowledgments back?
+
+
+- 1000
+
+
+- 1
+
+
+- 100
+
+
+- 10,000
+
+
+- ```10```
+
+# 3.4-10 PIPELINING.
+
+
+Which of the following statements about pipelining are true?  One or more statements may be true.
+
+
+- With pipelining, a packet is only retransmitted if that packet, or its ACK, has been lost.
+
+
+- ``With a pipelined sender, there may be transmitted packets “in flight” – propagating through the channel – packets that the sender has sent but that the receiver has not yet received.``
+
+
+- ``A pipelined sender can have transmitted multiple packets for which the sender has yet to receive an ACK from the receiver. ``
+
+
+- With pipelining, a receiver will have to send fewer acknowledgments as the degree of pipelining increases
+
+# 3.4-11 PACKET BUFFERING IN GO-BACK-N.
+
+
+What are some reasons for discarding received-but- out-of-sequence packets at the receiver in GBN? Indicate one or more of the following statements that are correct.
+
+
+- Discarding an out of sequence packet will really force the sender to retransmit.
+
+
+- ```The sender will resend that packet in any case.```
+
+
+
+
+- If some packets are in error, then its likely that other packets are in error as well.
+
+
+- ```The implementation at the receiver is simpler.```
+
+# 3.4-12 PACKET BUFFERING IN GO-BACK-N (MORE).
+
+
+What are some reasons for not discarding received-but- out-of-sequence packets at the receiver in GBN? Indicate one or more of the following statements that are correct.
+
+
+- ```Even though that packet will be retransmitted, its next retransmission could be corrupted, so don’t discard a perfectly well-received packet, silly!```
+
+
+- By not discarding, the receiver can implicitly let the sender know that it (the sender) does not necessarily have to retransmit that packet.
+
+
+- Complex protocols are always better
+
+# 3.4-13 RECEIVER OPERATION IN SELECTIVE REPEAT.
+
+
+In the SR receiver window (see diagram below, taken from PPT slides and video), why haven’t the red packets been delivered yet? Check the one or more reasons below that apply.
+
+![](./chapter3photo/3.4.13.jpg)
+
+- Red packets have a lower delivery priority up to the application.
+
+- ```There is a packet with a lower sequence number than any of the red packets that has yet to be received, so in-order delivery of data in the red packets up to the application layer is not possible.```
+
+- There is a packet with a higher sequence number than any of the red packets that has yet to be received, so in-order delivery of data in the red packets to the application layer is not yet possible.
+
+# 3.4-14 RECEIVER OPERATION IN SELECTIVE REPEAT (MORE).
+
+
+In SR, why does the receiver have to acknowledge packets with sequence numbers that are less than (and to the left of) those in its window, which starts at rcv_base.
+![](./chapter3photo/3.4.13.jpg)
+
+- Actually, this ACK retransmission can be ignored and the protocol will still function correctly, but its performance won’t be as good.
+
+
+- ```Because the sender may not have received an ACK for that packet yet.```
+
+
+- Because, at the time of the data packet arrival at the receiver, the sender has definitely still not received an ACK for that packet.
+
+# 3.5-1 TCP RELIABILITY SEMANTICS.
+
+
+True or False:  On the sending side, the TCP sender will take each application-layer chunk of data written into a TCP socket and send it in a distinct TCP segment. And then on the receiving side, TCP will deliver a segment’s payload into the appropriate socket, preserving the application-defined message boundary.
+
+
+- True.
+
+
+- ```False.```
+
+# 3.5-2 TCP SEGMENT FORMAT.
+
+
+For the given function of a field in the TCP segment, select the name of that field from the pull-down list.
+
+- This field contains the port number associated with the sending socket for this TCP segment.
+    - ```Source port number```
+- This field contains application data that was written into a socket by the sender of this TCP segment.
+    - ```Data (or payload)```
+- This field contains the index in the sender-to-receiver byte stream of the first byte of that data in the payload carried in this segment.
+    - ```Sequence number```
+- This field contains the index in the byte stream of the next in-order byte expected at the receiver
+    - ```ACK number field```
+- If set, this segment cumulatively ACKs all data bytes up to, but not including, the byte index in the ACK value field of this segment.
+    - ```ACK bit```
+- This field contains the number of available bytes in the TCP receiver’s buffer.
+    - ```Receiver advertised window```
+- This field contains the Internet checksum of the TCP segment and selected fields in the IP datagram header.
+    - ```Checksum```
+- This field contains the number of bytes in the TCP header.
+    - ```Header length field```
+
+# 3.5-3 TCP SEQUENCE NUMBERS AND ACKS (1).
+
+
+Consider the TCP Telnet scenario below (from Fig. 3.31 in text). Why is it that the receiver sends an ACK that is one larger than the sequence number in the received datagram?
+
+![](./chapter3photo/3.5.3.jpg)
+
+- ```Because the send-to receiver segment carries only one byte of data, and after that segment is received, the next expected byte of data is just the next byte (i.e., has an index that is one larger) in the data stream.```
+
+
+- Because TCP sequence numbers always increase by 1, with every new segment, and the TCP receiver always send the sequence number of the next expected segment
+
+# 3.5-4 TCP SEQUENCE NUMBERS AND ACKS (2).
+
+
+Suppose that as shown in the figure below, a TCP sender is sending segments with 100 bytes of payload.  The TCP sender sends five segments with sequence numbers 100, 200, 300, 400, and 500.  Suppose that the segment with sequence number 300 is lost.  The TCP receiver will buffer correctly-received but not-yet-in-order segments for later delivery to the application layer (once missing segments are later received).
+
+![](./chapter3photo/3.5.4.jpg)
+
+Complete the sentences below ....
+
+- After receiving segment 100, the receiver responds with an ACK with value:
+    - ```200```
+- After receiving segment 200, the receiver responds with an ACK with value:
+    - ```300```
+- After receiving segment 500, the receiver responds with an ACK with value:
+    - ```300, a duplicate ACK```
+- After receiving the retransmitted segment 300, the receiver responds with an ACK with value:
+    - ```600```
+- The TCP receiver does not respond in the example, with an ACK with value:
+    - ```400```
+
+# 3.5-5 TCP RTT ESTIMATION: EWMA.
+
+
+Consider TCP use of an exponentially weighted moving average (EWMA) to compute the nth value of the estimated RTT:
+
+EstimatedRTTn = (1- a)*EstimatedRTTn-1 + a*SampleRTTn
+
+True or False: with this EWMA algorithm the value of EstimatedRTTn  has no dependence on the earlier sample, SampleRTTn-1 
+
+
+- True
+
+
+- ```False```
+
+# 3.5-6 TCP TIMER MANAGEMENT.
+
+
+Consider the TCP Telnet scenario below (from Fig. 3.36 in text). What timer-related action does the sender take on the receipt of ACK 120?
+
+![](./chapter3photo/3.5.6.jpg)
+
+- ```Cancels any running timers.```
+
+
+- Leaves any currently-running timers running.
+
+
+- Restarts a timer for the segment with sequence number 92.
+
+# 3.5-7 TCP FLOW CONTROL.
+
+
+True or False:  with TCP’s flow control mechanism, where the receiver tells the sender how much free buffer space it has (and the sender always limits the amount of outstanding, unACKed, in-flight data to less than this amount), it is not possible for the sender to send more data than the receiver has room to buffer.
+
+
+- ```True```
+
+
+- False
+
+
+# 3.5-8 TCP CONNECTION MANAGEMENT.
+
+
+Match the description of a TCP connection management message with the name of the message used to accomplish that function.
+
+- A message from client to server initiating a connection request.
+    - ```SYN message```
+- A message from server to client ACKing receipt of a SYN message and indicating the willingness of the server to establish a TCP connection with the client.
+    - ```SYNACK message```
+- A message indicating that the sending side is initiating the protocol to terminate a connection.
+    - ```FIN message```
+- A message sent in response to a request to terminate a connection, ACKing that the side receiving this message is also willing to terminate the connection
+    - ```FINACK message```
+- A general purpose error message used during connection set up or tear down to let the other side know that an error has occurred, and that the referenced connection should be shut down.
+    - ```RESET message```
+
+# 3.5-9 TCP FAST RETRANSMIT.
+
+
+Consider TCP’s Fast Retransmit optimization (see Figure 3.37 from the text, below).  Of course, the sender doesn't know for sure that the segment with sequence # 100 is actually lost (it can’t see into the channel). Can a sender get three duplicate ACKs for a segment that in fact has not been lost? Which of the following statements are true?  Suppose a channel can lose, but will not corrupt, messages.
+
+![](./chapter3photo/3.5.9.jpg)
+
+        Both of them is the answer
+
+- ```If the channel cannot reorder messages, a triple duplicate ACK indicates to the sender that a segment loss has happened for sure. Actually (again assuming the channel cannot corrupt or reorder messages), even a single duplicate ACK would indicate that a segment loss has happed for sure.```
+
+
+- ```If the channel can reorder messages, a triple duplicate ACK can occur even though a message is not lost; since it's possible that a message has just been reordered and has not yet arrived when the three duplicate ACKs were generated.```
+
