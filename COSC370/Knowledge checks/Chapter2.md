@@ -438,3 +438,136 @@ Will the web server close the TCP connection after sending this message?
 
 
 - There’s not enough information to answer this question.
+
+# 2.3
+# E-MAIL DELAYS.
+
+
+How many RTTs are there from when a client first contacts an email server (by initiating a TCP session) to when the client can begin sending the email message itself – that is following all initial TCP or SMTP handshaking required?
+Recall the figure below from our class notes:
+![](./chapter2photo/2.3.1.jpg)
+
+- 0
+
+
+- 1
+
+
+- 2
+
+
+- 2.5
+
+
+- ```3```
+
+
+# COMPARING AND CONTRASTING HTTP AND SMTP.
+
+
+Which of the following characteristics apply to HTTP only (and do not apply to SMTP)?  Note: check one or more of the characteristics below.
+
+
+- Uses server port 25.
+
+
+- ```Uses a blank line (CRLF) to indicate end of request header.```
+
+
+- Has ASCII command/response interaction, status codes.
+
+
+- ```Operates mostly as a “client pull” protocol.```
+
+
+- Operates mostly as a “client push” protocol.
+
+
+- Uses CRLF.CRLF to indicate end of message.
+
+
+- ```Uses server port 80.```
+
+
+- Is able to use a persistent TCP connection to transfer multiple objects.
+
+# COMPARING AND CONTRASTING HTTP AND SMTP (2).
+
+
+Which of the following characteristics apply to SMTP only (and do not apply to HTTP)?  Note: check one or more of the characteristics below.
+
+
+- Uses a blank line (CRLF) to indicate end of request header.
+
+
+- Uses server port 80.
+
+
+- Has ASCII command/response interaction, status codes.
+
+
+- ```Operates mostly as a “client push” protocol.```
+
+
+- Operates mostly as a “client pull” protocol.
+
+
+- ```Uses CRLF.CRLF to indicate end of message.```
+
+
+- ```Uses server port 25.```
+
+
+- Is able to use a persistent TCP connection to transfer multiple objects.
+
+
+# COMPARING AND CONTRASTING HTTP AND SMTP (3).
+
+
+Which of the following characteristics apply to both HTTP and SMTP? Note: check one or more of the characteristics below.
+
+
+- Operates mostly as a “client pull” protocol.
+
+
+- Uses a blank line (CRLF) to indicate end of request header.
+
+
+- ```Has ASCII command/response interaction, status codes.```
+
+
+- ```Is able to use a persistent TCP connection to transfer multiple objects.```
+
+
+- Operates mostly as a “client push” protocol.
+
+
+- Uses CRLF.CRLF to indicate end of message.
+
+# WHICH E-MAIL PROTOCOL?
+
+
+  Match the functionality of a protocol with the name of a the email protocol (if any) that implements that functionality.
+
+- Pushes email from a mail client to a mail server.
+    - ```SMTP```
+- Pulls mail from one mail server to another mail server.
+    - ```Neither SMTP nore IMAP does this```
+- Pulls email to a mail client from a mail server.
+    - ```IMAP```
+
+# 2.4
+# DNS FUNCTIONS
+
+
+. Match the function of a server to a given type of DNS server in the  DNS server hierarchy.
+
+- Provides authoritative hostname to IP mappings for organization’s named hosts.
+    - 
+- Replies to DNS query by local host, by contacting other DNS servers to answer the query.
+
+- Responsible for a domain (e.g., *.com, *.edu); knows how to contact authoritative name servers.
+
+- Highest level of the DNS hierarchy, knows how to reach servers responsible for a given domain (e.g., *.com, *.edu).
+
+
