@@ -105,13 +105,13 @@ The network layer’s best-effort delivery service means that IP makes its “be
 What is meant by transport-layer demultiplexing?
 
 
-Receiving a transport-layer segment from the network layer, extracting the payload, determining the destination IP address for the data, and then passing the segment and the IP address back down to the network layer.
+- Receiving a transport-layer segment from the network layer, extracting the payload, determining the destination IP address for the data, and then passing the segment and the IP address back down to the network layer.
 
 
-Taking data from one socket (one of possibly many sockets), encapsulating a data chuck with header information – thereby creating a transport layer segment – and eventually passing this segment to the network layer.
+- Taking data from one socket (one of possibly many sockets), encapsulating a data chuck with header information – thereby creating a transport layer segment – and eventually passing this segment to the network layer.
 
 
-Receiving a transport-layer segment from the network layer, extracting the payload (data) and delivering the data to the correct socket.
+- Receiving a transport-layer segment from the network layer, extracting the payload (data) and delivering the data to the correct socket.
 
 
-Taking data from multiple sockets, all associated with the same destination IP address, adding destination port numbers to each piece of data, and then concatenating these to form a transport-layer segment, and eventually passing this segment to the network layer.
+- Taking data from multiple sockets, all associated with the same destination IP address, adding destination port numbers to each piece of data, and then concatenating these to form a transport-layer segment, and eventually passing this segment to the network layer.
