@@ -243,12 +243,99 @@ Over what set of bytes is the checksum field in the UDP header computed over?
 - The entire UDP segment, except the checksum field itself.
 
 
-- The entire UDP segment, except the checksum field itself, and the IP sender and receive address fields
+- ```The entire UDP segment, except the checksum field itself, and the IP sender and receive address fields```
 
 
 - Just the UDP header but not the payload.
 
 
+# COMPUTING THE INTERNET CHECKSUM (1).
+
+
+Compute the Internet checksum value for these two 16-bit words: 11110101 11010011 and 10110011 01000100
+[Note: you can find more problems like this one here.]
+
+    Just add them up and flip
+
+- 01101110 11010101  
+
+
+- 01011110 11000101  
+
+
+- 01010110 11101000
+
+
+- ```01010110 11100111```
+
+
+# COMPUTING THE INTERNET CHECKSUM (2).
+
+
+Compute the Internet checksum value for these two 16-bit words: 01000001 11000100 and 00100000 00101011
+[Note: you can find more problems like this one here.]
 
 
 
+- 01101110 11010101  
+
+
+- ```10011110 00010000```
+
+
+- 10011110 00001111 
+
+
+- 10011110 00010001
+
+# UDP CHECKSUM: HOW GOOD IS IT?
+
+
+True or False:  When computing the Internet checksum for two numbers, a single flipped bit (i.e., in just one of the two numbers) will always result in a changed checksum.
+
+
+- False
+
+
+- ```True```
+
+# UDP CHECKSUM: HOW GOOD IS IT?
+
+
+True or False: When computing the Internet checksum for two numbers, a single flipped bit in each of the two numbers will always result in a changed checksum.
+
+
+- True
+
+
+- ```False```
+
+# IP ADDRESSES AND PORT NUMBERS IN A UDP SEGMENT SENT IN REPLY. 
+
+
+Suppose a UDP segment (A in the figure below) arrives at a host with an IP address of 128.119.40.186. The source port in the UDP segment is 4829 and the destination port is 3546. The IP address of the sending host is 60.54.75.24.
+![](./chapter3photo/3.3.9.jpg)
+
+
+Now consider the UDP datagram (and the IP datagram that will encapsulate it) sent in reply by the application on host 128.119.40.186  to the original sender host, labeled B in the figure above.  Complete the sentences below ...
+
+What are the source and destination port numbers and IP addresses? (Enter the integer port number or the 4-part dotted decimal IP address, included the period)
+
+The source port number of the UDP segment (B) sent in reply is: 
+
+The source IP address of the IP datagram containing the UDP segment (B) sent in reply is: 
+
+The destination port number of the UDP segment (B) sent in reply  is:
+
+The destination IP address of the IP datagram containing the UDP segment (B) sent in reply is: 
+
+[Note: you can find more problems like this one here.]
+
+
+- The source port number of the UDP segment (B) sent in reply is: 
+
+- The source IP address of the IP datagram containing the UDP segment (B) sent in reply is: 
+
+- The destination port number of the UDP segment (B) sent in reply  is:
+
+- The destination IP address of the IP datagram containing the UDP segment (B) sent in reply is: 

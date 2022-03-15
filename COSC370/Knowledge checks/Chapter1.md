@@ -7,16 +7,16 @@ Which of the following descriptions below correspond to a "nuts-and-bolts" view 
 - A place I go for information, entertainment, and to communicate with people.
 
 
-- ```==A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.==```
+-       ```A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.```
 
 
-- ```A collection of billions of computing devices, and packet switches interconnected by links.```
+-       ```A collection of billions of computing devices, and packet switches interconnected by links.```
 
 
 - A platform for building network applications.
 
 
-- ```A "network of networks".```
+-       ```A "network of networks".```
 
 # WHAT IS THE INTERNET (2)? 
 
