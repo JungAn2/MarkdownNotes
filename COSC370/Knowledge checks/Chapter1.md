@@ -7,16 +7,16 @@ Which of the following descriptions below correspond to a "nuts-and-bolts" view 
 - A place I go for information, entertainment, and to communicate with people.
 
 
-- >  A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.
+- ```A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.```
 
 
-- > A collection of billions of computing devices, and packet switches interconnected by links.
+- ```A collection of billions of computing devices, and packet switches interconnected by links.```
 
 
 - A platform for building network applications.
 
 
-- > A "network of networks".
+- ```A "network of networks".```
 
 # WHAT IS THE INTERNET (2)? 
 
@@ -30,13 +30,13 @@ Which of the following descriptions below correspond to a "services" view of the
 - A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.
 
 
-- > A place I go for information, entertainment, and to communicate with people.
+- ```A place I go for information, entertainment, and to communicate with people.```
 
 
 - A "network of networks".
 
 
-- >A platform for building network applications.
+- ```A platform for building network applications.```
 
 # WHAT IS A PROTOCOL?
 
@@ -47,16 +47,16 @@ Which of the following human scenarios involve a protocol (recall: "Protocols de
 - A person sleeping.
 
 
-- > Two people introducing themselves to each other.
+- ```Two people introducing themselves to each other.```
 
 
 - A person reading a book.
 
 
-- > A student raising her/his hand to ask a really insightful question, followed by the teaching acknowledging the student, listening carefully to the question, and responding with a clear, insightful answer.  And then thanking the student for the question, since teachers love to get questions.
+- ```A student raising her/his hand to ask a really insightful question, followed by the teaching acknowledging the student, listening carefully to the question, and responding with a clear, insightful answer.  And then thanking the student for the question, since teachers love to get questions.```
 
 
-- > One person asking, and getting, the time to/from another person.
+- ```One person asking, and getting, the time to/from another person.```
 
 # 1.2
 # ACCESS NETWORK PER-SUBSCRIBER SPEEDS.
@@ -65,15 +65,15 @@ Which of the following human scenarios involve a protocol (recall: "Protocols de
 Match the access network with the approximate speeds that a subscriber might experience. (Note: if you look these up, do so in the 8E textbook, slides,or video -- not in the 7E or earlier versions, since link access speeds are always increasing over the years).
 
 - Ethernet 
-    > Wired. Up to 100's Gbps per link.
+    - ```Wired. Up to 100's Gbps per link.```
 - 802.11 wifi
-    > Wireless. 10’s to 100’s of Mbps per device.
+    - ```Wireless. 10’s to 100’s of Mbps per device.```
 - Cable access network
-    > Wired. Up to 10’s to 100’s of Mbps downstream per user.
+    - ```Wired. Up to 10’s to 100’s of Mbps downstream per user.```
 - Digital subscriber Line
-    > Wired. Up to 10’s of Mbps downstream per user.
+    - ```Wired. Up to 10’s of Mbps downstream per user.```
 - 4G cellular LTE
-    > Wireless. Up to 10’s Mbps per device.
+    - ```Wireless. Up to 10’s Mbps per device.```
 
 # LINK TRANSMISSION CHARACTERISTICS.
 
@@ -81,7 +81,7 @@ Match the access network with the approximate speeds that a subscriber might exp
 Which of the following physical layer technologies has the highest transmission rate and lowest bit error rate in practice?
 
 
-- > Fiber optic cable
+- ```Fiber optic cable```
 
 
 - Satellite channel
@@ -108,7 +108,7 @@ Choose one the following two definitions that makes the correct distinction betw
 - Routing is the local action of moving arriving packets from router’s input link to appropriate router output link, while forwarding is the global action of determining the source-destination paths taken by packets.
 
 
-- > Forwarding is the local action of moving arriving packets from router’s input link to appropriate router output link, while routing is the global action of determining the source-destination paths taken by packets.
+- ```Forwarding is the local action of moving arriving packets from router’s input link to appropriate router output link, while routing is the global action of determining the source-destination paths taken by packets.```
 
 # PACKET SWITCHING VERSUS CIRCUIT SWITCHING (1). 
 
@@ -116,13 +116,13 @@ Choose one the following two definitions that makes the correct distinction betw
 Which of the characteristics below are associated with the technique of packet switching?
 
 
-- > This technique is used in the Internet.
+- ```This technique is used in the Internet.```
 
 
-- > Congestion loss and variable end-end delays are possible with this technique.
+- ```Congestion loss and variable end-end delays are possible with this technique.```
 
 
-- > Resources are used on demand, not reserved in advance.
+- ```Resources are used on demand, not reserved in advance.```
 
 
 - Frequency Division Multiplexing (FDM) and Time Division Multiplexing (TDM) are two approaches for implementing this technique.
@@ -134,7 +134,7 @@ Which of the characteristics below are associated with the technique of packet s
 - Reserves resources needed for a call from source to destination.
 
 
-- > Data may be queued before being transmitted due to other user’s data that’s also queueing for transmission.
+- ```Data may be queued before being transmitted due to other user’s data that’s also queueing for transmission.```
 
 # PACKET SWITCHING VERSUS CIRCUIT SWITCHING (2).
 
@@ -148,10 +148,10 @@ Which of the characteristics below are associated with the technique of packet s
 - Congestion loss and variable end-end delays are possible with this technique.
 
 
-- > Reserves resources needed for a call from source to destination.
+- ```Reserves resources needed for a call from source to destination.```
 
 
-- > This technique was the basis for the telephone call switching during the 20th century and into the beginning of this current century.
+- ```This technique was the basis for the telephone call switching during the 20th century and into the beginning of this current century.```
 
 
 - Data may be queued before being transmitted due to other user’s data that’s also queueing for transmission.
@@ -160,7 +160,7 @@ Which of the characteristics below are associated with the technique of packet s
 - Resources are used on demand, not reserved in advance.
 
 
-- > Frequency Division Multiplexing (FDM) and Time Division Multiplexing (TDM) are two approaches for implementing this technique.
+- ```Frequency Division Multiplexing (FDM) and Time Division Multiplexing (TDM) are two approaches for implementing this technique.```
 
 # HOW MANY CALLS CAN BE CARRIED?
 
@@ -186,7 +186,7 @@ What is the maximum number of connections that can be ongoing in the network at 
 - 16
 
 
-- > 70
+- ```70```
 
 # TRYING OUT TRACEROUTE. 
 
@@ -198,7 +198,7 @@ Note: Routing may change, so the answer here may not be correct anymore.  Also, 
 
 ![](./chapter1photo/1.3.5.png)
 
-> nscs1bbs1
+- ```nscs1bbs1```
 
 # WHAT IS A NETWORK OF NETWORKS?
 
@@ -209,10 +209,10 @@ Note: Routing may change, so the answer here may not be correct anymore.  Also, 
 - The Internet is the fastest network ever built.
 
 
-- > The Internet is made up of access networks at the edge, tier-1 networks at the core, and interconnected regional and content provider networks as well.
+- ```The Internet is made up of access networks at the edge, tier-1 networks at the core, and interconnected regional and content provider networks as well.```
 
 
-- > The Internet is made up of a lot of different networks that are interconnected to each other.
+- ```The Internet is made up of a lot of different networks that are interconnected to each other.```
 
 
 - The Internet is the largest network ever built.
@@ -223,11 +223,11 @@ Note: Routing may change, so the answer here may not be correct anymore.  Also, 
 Consider a scenario in which 5 users are being multiplexed over a channel of 10 Mbps.  Under the various scenarios below, match the scenario to whether circuit switching or packet switching is better.
 
 - Each user generates traffic at an average rate of 2.1 Mbps, generating traffic at a rate of 15 Mbps when transmitting
-    > Neither works well in this overload scenario
+    - ```Neither works well in this overload scenario```
 - Each user generates traffic at an average rate of 2 Mbps, generating traffic at a rate of 2 Mbps when transmitting
-    > Circuit switching
+    - ```Circuit switching```
 - Each user generates traffic at an average rate of 0.21 Mbps, generating traffic at a rate of 15 Mbps when transmitting
-    > Packet switching
+    - ```Packet switching```
 
 # 1.4
 # COMPONENTS OF PACKET DELAY.
@@ -236,13 +236,13 @@ Consider a scenario in which 5 users are being multiplexed over a channel of 10 
 Match the description of each component of packet delay to its name in the pull down list.
 
 - Time needed to perform an integrity check, lookup packet information in a local table and move the packet from an input link to an output link in a router.
-    > Processing delay
+    - ```Processing delay```
 - Time spent waiting in packet buffers for link transmission.
-    > Queueing delay
+    - ```Queueing delay```
 - Time spent transmitting packets bits into the link.
-    > Transmission delay
+    - ```Transmission delay```
 - Time need for bits to physically propagate through the transmission medium from end one of a link to the other.
-    > Propagation delay
+    - ```Propagation delay```
 
 # COMPUTING PACKET TRANSMISSION DELAY(1).
 
@@ -253,7 +253,7 @@ Suppose a packet is L = 1500 bytes long (one byte = 8 bits), and link transmits 
         Equation = L/R
         L = 1500 * 8 bits
         R = 1,000,000,000 bps
-- > .000012 secs
+- ```.000012 secs```
 
 
 - .00012 secs
@@ -281,7 +281,7 @@ Suppose a packet is L = 1200 bytes long (one byte = 8 bits), and link transmits 
 - .0012 secs
 
 
-- > .000096 secs
+- ```.000096 secs```
 
 
 - 8,333 secs
@@ -314,7 +314,7 @@ What is the transmission delay at link 2?  [Note: you can find more problems lik
 - 12.5 secs
 
 
-- > 8 x 10^(-5) secs
+- ```8 x 10^(-5) secs```
 
 
 - 12,500 secs
@@ -341,7 +341,7 @@ What is the propagation delay at (along) link 2?
 - 3 x 10^8 secs
 
 
-- > .0033 secs
+- ```.0033 secs```
 
 # COMPUTING THROUGHPUT: A SIMPLE SCENARIO.
 
@@ -355,7 +355,7 @@ What is the maximum throughput achievable between sender and receiver in the sce
 - 11.5 Mbps
 
 
-- > 1.5 Mbps
+- ```1.5 Mbps```
 
 
 - 10 Mbps
@@ -372,7 +372,7 @@ Your answer: [A] Mbps
     Throughput is the bottleneck
     Also the question asked each of server/client not altogether
 
-> 50
+- ```50```
 
 
 # COMPUTING UTLILIZATION (1).
@@ -389,7 +389,7 @@ Your answer: The utilization of the server links is: [A]
     bottleneck = 200
     server link = 200
 
-> 1.00
+- ```1.00```
 
 # COMPUTING UTILIZATION (2).
 
@@ -405,7 +405,7 @@ Your answer: The utilization of shared link is: [A]
     Server send rate = 200Mbps
     shared link = 300Mbps
     
-> 0.67
+- ```0.67```
 
 # COMPUTING UTILIZATION (3).
 
@@ -422,7 +422,7 @@ Your answer: The utilization of client link is: [A]
     bottleneck = 50
     client = 90
 
-> 0.56
+- ```0.56```
 
 # 1.5
 # LAYERS IN THE INTERNET PROTOCOL STACK.
@@ -431,15 +431,15 @@ Your answer: The utilization of client link is: [A]
 Match the function of a layer in the Internet protocol stack to its its name in the pulldown menu.
 
 - Protocols that are part of a distributed network application
-    > Application Layer
+    - ```Application Layer```
 - Transfer of data between one process and another process (typically on different hosts).
-    > Transport layer
+    -  ```Transport layer```
 - Delivery of datagrams from a source host to a destination host (typically).
-    > Network layer
+    -  ```Network layer```
 - Transfer of data between neighboring network devices.
-    > Link layer
+    -  ```Link layer```
 - Transfer of a bit into and out of a transmission media.
-    > Physical layer
+    - ```Physical layer```
 
 # WHAT’S A “PACKET” REALLY CALLED?
 
@@ -447,15 +447,15 @@ Match the function of a layer in the Internet protocol stack to its its name in 
 Match the name of an Internet layer with unit of data that is exchanged among protocol entities at that layer, using the pulldown menu.
 
 - Application layer
-    > Message
+    - ```Message```
 - Transport layer
-    > Segment
+    - ```Segment```
 - Network layer
-    > Datagram
+    - ```Datagram```
 - Link layer
-    > Frame
+    - ```Frame```
 - Physical layer
-    > Bit
+    - ```Bit```
 
 # PROTOCOL HEADERS.
 
@@ -464,11 +464,11 @@ Consider the figure below, showing a link-layer frame heading from a host to a r
 ![](./chapter1photo/1.5.3.jpg)
 
 - Header H<sub>1</sub>
-    > Link layer
+    - ```Link layer```
 - Header H<sub>2</sub>
-    > Network layer
+    - ```Network layer```
 - Header H<sub>3</sub>
-    > Transport layer
+    - ```Transport layer```
 
 # WHAT IS "ENCAPSULATION"?
 
@@ -479,7 +479,7 @@ Which of the definitions below describe what is meant by the term "encapsulation
 - Determining the name of the destination host, translating that name to an IP address and then placing that value in a packet header field.
 
 
-- > Taking data from the layer above, adding header fields appropriate for this layer, and then placing the data in the payload field of the “packet” for that layer.
+- ```Taking data from the layer above, adding header fields appropriate for this layer, and then placing the data in the payload field of the “packet” for that layer.```
 
 
 - Receiving a “packet” from the layer below, extracting the payload field, and after some internal actions possibly delivering that payload to an upper layer protocol.
@@ -497,15 +497,15 @@ Which of the definitions below describe what is meant by the term "encapsulation
   Match the description of a security defense with its name.
 
   - Specialized “middleboxes” filtering or blocking traffic, inspecting packet contents inspections
-    > Firewall
+    - ```Firewall```
   - Provides confidentiality by encoding contents
-    > Encryption
+    - ```Encryption```
 - Used to detect tampering/changing of message contents, and to identify the originator of a message.
-    > Digital signatures
+    - ```Digital signatures```
 - Limiting use of resources or capabilities to given users.
-    > Access control
+    - ```Access control```
 - Proving you are who you say you are.
-    > Authentication
+    - ```Authentication```
 
 # 1.7
 # NETWORKING HISTORY - WHEN DID IT HAPPEN?
@@ -514,18 +514,18 @@ Which of the definitions below describe what is meant by the term "encapsulation
 Match the networking event with the time frame when the event occurred.
 
 - Early studies of packet switching by Baran, Davies, Kleinrock.
-    > Early 1960's
+    - ```Early 1960's```
 - First ARPAnet node operational.
-    > Late 1960's
+    - ```Late 1960's```
 - Internetting: DARPA researchers connect three networks together.
-    > 1970's
+    - ```1970's```
 - The Internet Protocol (IP) is standardized in RFC 791.
-    > Early 1980's
+    - ```Early 1980's```
 - Congestion control is added to the TCP protocol.
-    > Late 1980's
+    - ```Late 1980's```
 - The WWW starts up (note: the WWW design started at the end of previous decade).
-    > 1990's
+    - ```1990's```
 - Software-defined networking begins.
-    > 2000 - 2010
+    - ```2000 - 2010```
 - The number wireless Internet-connected devices surpasses the number of connected wired devices.
-    > 2010 - 2020
+    - ```2010 - 2020```
