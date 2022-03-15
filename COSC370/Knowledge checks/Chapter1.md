@@ -1,5 +1,4 @@
-# 1.1
-# WHAT IS THE INTERNET? 
+# 1.1-1 WHAT IS THE INTERNET? 
 
 Which of the following descriptions below correspond to a "nuts-and-bolts" view of the Internet?
 
@@ -18,7 +17,7 @@ Which of the following descriptions below correspond to a "nuts-and-bolts" view 
 
 -       ```A "network of networks".```
 
-# WHAT IS THE INTERNET (2)? 
+# 1.1-2 WHAT IS THE INTERNET (2)? 
 
 
 Which of the following descriptions below correspond to a "services" view of the Internet?
@@ -38,7 +37,7 @@ Which of the following descriptions below correspond to a "services" view of the
 
 - ```A platform for building network applications.```
 
-# WHAT IS A PROTOCOL?
+# 1.1-3 WHAT IS A PROTOCOL?
 
 
 Which of the following human scenarios involve a protocol (recall: "Protocols define the format, order of messages sent and received among network entities, and actions taken on message transmission, receipt")?
@@ -58,8 +57,7 @@ Which of the following human scenarios involve a protocol (recall: "Protocols de
 
 - ```One person asking, and getting, the time to/from another person.```
 
-# 1.2
-# ACCESS NETWORK PER-SUBSCRIBER SPEEDS.
+# 1.2-1 ACCESS NETWORK PER-SUBSCRIBER SPEEDS.
 
 
 Match the access network with the approximate speeds that a subscriber might experience. (Note: if you look these up, do so in the 8E textbook, slides,or video -- not in the 7E or earlier versions, since link access speeds are always increasing over the years).
@@ -75,7 +73,7 @@ Match the access network with the approximate speeds that a subscriber might exp
 - 4G cellular LTE
     - ```Wireless. Up to 10’s Mbps per device.```
 
-# LINK TRANSMISSION CHARACTERISTICS.
+# 1.2-2 LINK TRANSMISSION CHARACTERISTICS.
 
 
 Which of the following physical layer technologies has the highest transmission rate and lowest bit error rate in practice?
@@ -98,8 +96,7 @@ Which of the following physical layer technologies has the highest transmission 
 
 - Coaxial cable
 
-# 1.3
-# ROUTING VERSUS FORWARDING. 
+# 1.3-1 ROUTING VERSUS FORWARDING. 
 
 
 Choose one the following two definitions that makes the correct distinction between routing versus forwarding.
@@ -110,7 +107,7 @@ Choose one the following two definitions that makes the correct distinction betw
 
 - ```Forwarding is the local action of moving arriving packets from router’s input link to appropriate router output link, while routing is the global action of determining the source-destination paths taken by packets.```
 
-# PACKET SWITCHING VERSUS CIRCUIT SWITCHING (1). 
+# 1.3-2 PACKET SWITCHING VERSUS CIRCUIT SWITCHING (1). 
 
 
 Which of the characteristics below are associated with the technique of packet switching?
@@ -136,7 +133,7 @@ Which of the characteristics below are associated with the technique of packet s
 
 - ```Data may be queued before being transmitted due to other user’s data that’s also queueing for transmission.```
 
-# PACKET SWITCHING VERSUS CIRCUIT SWITCHING (2).
+# 1.3-3 PACKET SWITCHING VERSUS CIRCUIT SWITCHING (2).
 
 
   Which of the characteristics below are associated with the technique of circuit switching?
@@ -162,7 +159,7 @@ Which of the characteristics below are associated with the technique of packet s
 
 - ```Frequency Division Multiplexing (FDM) and Time Division Multiplexing (TDM) are two approaches for implementing this technique.```
 
-# HOW MANY CALLS CAN BE CARRIED?
+# 1.3-4 HOW MANY CALLS CAN BE CARRIED?
 
 
 Consider the circuit-switched network shown in the figure below, with  four circuit switches A, B, C, and D. Suppose there are 20 circuits between A and B, 19 circuits between B and C, 15 circuits between C and D, and 16 circuits between D and A.
@@ -188,7 +185,7 @@ What is the maximum number of connections that can be ongoing in the network at 
 
 - ```70```
 
-# TRYING OUT TRACEROUTE. 
+# 1.3-5 TRYING OUT TRACEROUTE. 
 
 
 Perform a traceroute from your computer (on whatever network you happen to be on) to gaia.cs.umass.edu. Use traceroute (on Mac terminal) or tracert (on Windows command line) or tracepath (on a Linux command line). Enter the missing part of the name of the router just before the host gaia.cs.umass.edu is reached:
@@ -200,7 +197,7 @@ Note: Routing may change, so the answer here may not be correct anymore.  Also, 
 
 - ```nscs1bbs1```
 
-# WHAT IS A NETWORK OF NETWORKS?
+# 1.3-6 WHAT IS A NETWORK OF NETWORKS?
 
 
   When we say that the Internet is a “network of networks,” we mean? Check all that apply (hint: check two or more).
@@ -217,7 +214,7 @@ Note: Routing may change, so the answer here may not be correct anymore.  Also, 
 
 - The Internet is the largest network ever built.
 
-# PACKET SWITCHING OR CIRCUIT-SWITCHING?
+# 1.3-7 PACKET SWITCHING OR CIRCUIT-SWITCHING?
 
 
 Consider a scenario in which 5 users are being multiplexed over a channel of 10 Mbps.  Under the various scenarios below, match the scenario to whether circuit switching or packet switching is better.
@@ -229,8 +226,7 @@ Consider a scenario in which 5 users are being multiplexed over a channel of 10 
 - Each user generates traffic at an average rate of 0.21 Mbps, generating traffic at a rate of 15 Mbps when transmitting
     - ```Packet switching```
 
-# 1.4
-# COMPONENTS OF PACKET DELAY.
+# 1.4-1 COMPONENTS OF PACKET DELAY.
 
 
 Match the description of each component of packet delay to its name in the pull down list.
@@ -244,7 +240,7 @@ Match the description of each component of packet delay to its name in the pull 
 - Time need for bits to physically propagate through the transmission medium from end one of a link to the other.
     - ```Propagation delay```
 
-# COMPUTING PACKET TRANSMISSION DELAY(1).
+# 1.4-2 COMPUTING PACKET TRANSMISSION DELAY(1).
 
 
 Suppose a packet is L = 1500 bytes long (one byte = 8 bits), and link transmits at R = 1 Gbps (i.e., a link can transmit bits 1,000,000,000 bits per second).  What is the transmission delay for this packet? [Note: you can find more problems like this one here.]
@@ -267,7 +263,7 @@ Suppose a packet is L = 1500 bytes long (one byte = 8 bits), and link transmits 
 
 - 666,666 secs
 
-# COMPUTING PACKET TRANSMISSION DELAY (2).
+# 1.4-3 COMPUTING PACKET TRANSMISSION DELAY (2).
 
 
 Suppose a packet is L = 1200 bytes long (one byte = 8 bits), and link transmits at R = 100 Mbps (i.e., a link can transmit bits 100,000,000 bits per second).  What is the transmission delay for this packet? [Note: you can find more problems like this one here.]
@@ -292,7 +288,7 @@ Suppose a packet is L = 1200 bytes long (one byte = 8 bits), and link transmits 
 
 - .00096 secs
 
-# COMPUTING PACKET TRANSMISSION DELAY (3).
+# 1.4-4 COMPUTING PACKET TRANSMISSION DELAY (3).
 
 
 Consider the network shown in the figure below, with three links, each with the specified transmission rate and link length. Assume the length of a packet is 8000 bits.
@@ -319,7 +315,7 @@ What is the transmission delay at link 2?  [Note: you can find more problems lik
 
 - 12,500 secs
 
-# COMPUTING PROPAGATION DELAY.
+# 1.4-5 COMPUTING PROPAGATION DELAY.
 
 
 Consider the network shown in the figure below, with three links, each with the specified transmission rate and link length. Assume the length of a packet is 8000 bits. The speed of light propagation delay on each link is 3x10^8 m/sec
@@ -343,7 +339,7 @@ What is the propagation delay at (along) link 2?
 
 - ```.0033 secs```
 
-# COMPUTING THROUGHPUT: A SIMPLE SCENARIO.
+# 1.4-6 COMPUTING THROUGHPUT: A SIMPLE SCENARIO.
 
 
 What is the maximum throughput achievable between sender and receiver in the scenario shown below?
@@ -360,7 +356,7 @@ What is the maximum throughput achievable between sender and receiver in the sce
 
 - 10 Mbps
 
-# COMPUTING THROUGHPUT. 
+# 1.4-7 COMPUTING THROUGHPUT. 
 
 
 Consider the scenario shown below, with four different servers connected to four different clients over four three-hop paths. The four pairs share a common middle hop with a transmission capacity of R = 300 Mbps. The four links from the servers to the shared link have a transmission capacity of RS = 50 Mbps. Each of the four links from the shared middle link to a client has a transmission capacity of RC = 90 Mbps.
@@ -375,7 +371,7 @@ Your answer: [A] Mbps
 - ```50```
 
 
-# COMPUTING UTLILIZATION (1).
+# 1.4-8 COMPUTING UTLILIZATION (1).
 
 
 Consider the scenario shown below, with four different servers connected to four different clients over four three-hop paths. The four pairs share a common middle hop with a transmission capacity of R = 300 Mbps. The four links from the servers to the shared link have a transmission capacity of RS = 50 Mbps. Each of the four links from the shared middle link to a client has a transmission capacity of RC = 90 Mbps.
@@ -391,7 +387,7 @@ Your answer: The utilization of the server links is: [A]
 
 - ```1.00```
 
-# COMPUTING UTILIZATION (2).
+# 1.4-9 COMPUTING UTILIZATION (2).
 
 
 Consider the scenario shown below, with four different servers connected to four different clients over four three-hop paths. The four pairs share a common middle hop with a transmission capacity of R = 300 Mbps. The four links from the servers to the shared link have a transmission capacity of RS = 50 Mbps. Each of the four links from the shared middle link to a client has a transmission capacity of RC = 90 Mbps.
@@ -407,7 +403,7 @@ Your answer: The utilization of shared link is: [A]
     
 - ```0.67```
 
-# COMPUTING UTILIZATION (3).
+# 1.4-10 COMPUTING UTILIZATION (3).
 
 
 Consider the scenario shown below, with four different servers connected to four different clients over four three-hop paths. The four pairs share a common middle hop with a transmission capacity of R = 300 Mbps. The four links from the servers to the shared link have a transmission capacity of RS = 50 Mbps. Each of the four links from the shared middle link to a client has a transmission capacity of RC = 90 Mbps.
@@ -424,8 +420,7 @@ Your answer: The utilization of client link is: [A]
 
 - ```0.56```
 
-# 1.5
-# LAYERS IN THE INTERNET PROTOCOL STACK.
+# 1.5-1 LAYERS IN THE INTERNET PROTOCOL STACK.
 
 
 Match the function of a layer in the Internet protocol stack to its its name in the pulldown menu.
@@ -441,7 +436,7 @@ Match the function of a layer in the Internet protocol stack to its its name in 
 - Transfer of a bit into and out of a transmission media.
     - ```Physical layer```
 
-# WHAT’S A “PACKET” REALLY CALLED?
+# 1.5-2 WHAT’S A “PACKET” REALLY CALLED?
 
 
 Match the name of an Internet layer with unit of data that is exchanged among protocol entities at that layer, using the pulldown menu.
@@ -457,7 +452,7 @@ Match the name of an Internet layer with unit of data that is exchanged among pr
 - Physical layer
     - ```Bit```
 
-# PROTOCOL HEADERS.
+# 1.5-3 PROTOCOL HEADERS.
 
 
 Consider the figure below, showing a link-layer frame heading from a host to a router.  There are three header fields shown.  Match the name of a header with a header label shown in the figure.
@@ -470,7 +465,7 @@ Consider the figure below, showing a link-layer frame heading from a host to a r
 - Header H<sub>3</sub>
     - ```Transport layer```
 
-# WHAT IS "ENCAPSULATION"?
+# 1.5-4 WHAT IS "ENCAPSULATION"?
 
 
 Which of the definitions below describe what is meant by the term "encapsulation"?
@@ -490,8 +485,7 @@ Which of the definitions below describe what is meant by the term "encapsulation
 
 - Starting a transport layer timer for a transmitted segment, and then if an ACK segment isn’t received before the timeout, placing that segment in a retransmission queue.
 
-# 1.6
-# SECURITY DEFENSES.
+# 1.6-1 SECURITY DEFENSES.
 
 
   Match the description of a security defense with its name.
@@ -507,8 +501,7 @@ Which of the definitions below describe what is meant by the term "encapsulation
 - Proving you are who you say you are.
     - ```Authentication```
 
-# 1.7
-# NETWORKING HISTORY - WHEN DID IT HAPPEN?
+# 1.7-1 NETWORKING HISTORY - WHEN DID IT HAPPEN?
 
 
 Match the networking event with the time frame when the event occurred.

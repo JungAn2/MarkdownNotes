@@ -1,5 +1,4 @@
-# 2.1
-# THE CLIENT-SERVER PARADIGM.
+# 2.1-1 THE CLIENT-SERVER PARADIGM.
 
 
 Which of the characteristics below are associated with a client-server approach to structuring network applications (as opposed to a P2P approach)?
@@ -19,7 +18,7 @@ Which of the characteristics below are associated with a client-server approach 
 
 -  ```There is a server with a well known server IP address.```
 
-# THE PEER-TO-PEER (P2P) PARADIGM.
+# 2.1-2 THE PEER-TO-PEER (P2P) PARADIGM.
 
 
 Which of the characteristics below are associated with a P2P approach to structuring network applications (as opposed to a client-server approach)?
@@ -39,7 +38,7 @@ Which of the characteristics below are associated with a P2P approach to structu
 
 - There is a server with a well known server IP address.
 
-# UDP SERVICE.
+# 2.1-3 UDP SERVICE.
 
 
 When an application uses a UDP socket, what transport services are provided to the application by UDP? Check all that apply.
@@ -62,7 +61,7 @@ When an application uses a UDP socket, what transport services are provided to t
 
 -  ```Best effort service.  The service will make a best effort to deliver data to the destination but makes no guarantees that any particular segment of data will actually get there.```
 
-# TCP SERVICE.
+# 2.1-4 TCP SERVICE.
 
 
 When an application uses a TCP socket, what transport services are provided to the application by TCP?  Check all that apply.
@@ -85,8 +84,7 @@ When an application uses a TCP socket, what transport services are provided to t
 
 -  ```Loss-free data transfer. The service will reliably transfer all data to the receiver, recovering from packets dropped in the network due to router buffer overflow.```
 
-# 2.2
-# “HTTP IS STATELESS.” 
+# 2.2-1 “HTTP IS STATELESS.” 
 
 
 What do we mean when we say “HTTP is stateless”? In answering this question, assume that cookies are not used.  Check all answers that apply.
@@ -106,7 +104,7 @@ What do we mean when we say “HTTP is stateless”? In answering this question,
 
 - The HTTP protocol is not licensed in any country.
 
-# HTTP COOKIES. 
+# 2.2-2 HTTP COOKIES. 
 
 
 What is an HTTP cookie used for?
@@ -126,7 +124,7 @@ What is an HTTP cookie used for?
 
 - A cookies is a code used by a server, carried on a client’s HTTP request, to access information the server had earlier stored about an earlier interaction with this person. [Think about the distinction between a browser and a person.]
 
-# THE HTTP GET.
+# 2.2-3 THE HTTP GET.
 
 
   What is the purpose of the HTTP GET message?
@@ -143,7 +141,7 @@ What is an HTTP cookie used for?
 
 -  ```The HTTP GET request message is used by a web client to request a web server to send the requested object from the server to the client.```
 
-# CONDITIONAL HTTP GET. 
+# 2.2-4 CONDITIONAL HTTP GET. 
 
 
 What is the purpose of the conditional HTTP GET request message?
@@ -160,7 +158,7 @@ What is the purpose of the conditional HTTP GET request message?
 
 - To allow a server to only send the requested object to the client if the client has never requested that object before.
 
-# A DETAILED LOOK AT AN HTTP GET (1).
+# 2.2-5 A DETAILED LOOK AT AN HTTP GET (1).
 
 
 Suppose a client is sending an HTTP GET request message to a web server, gaia.cs.umass.edu. Suppose the client-to-server HTTP GET message is the following:
@@ -188,7 +186,7 @@ What version of HTTP is the client using?
 
 - 1
 
-# A DETAILED LOOK AT AN HTTP GET (2).
+# 2.2-6 A DETAILED LOOK AT AN HTTP GET (2).
 
 
 Again, suppose a client is sending an HTTP GET request message to a web server, gaia.cs.umass.edu.  The client-to-server HTTP GET message is the following (same as in previous problem):
@@ -229,7 +227,7 @@ What is the language in which the client would least prefer to get a response?  
 
 - Spanish
 
-#A DETAILED LOOK AT AN HTTP GET (3).
+# 2.2-7 A DETAILED LOOK AT AN HTTP GET (3).
 
 
 Again, suppose a client is sending an HTTP GET request message to a web server, gaia.cs.umass.edu. Suppose the client-to-server HTTP GET message is the following (same as in previous problem):
@@ -261,7 +259,7 @@ Does the client have a cached copy of the object being requested?
 - There's not enough information in the header to answer this question.
 
 
-# A DETAILED LOOK AT AN HTTP REPLY.
+# 2.2-8 A DETAILED LOOK AT AN HTTP REPLY.
 
 
 Suppose now the server sends the following HTTP response message the client:
@@ -291,7 +289,7 @@ Will the web server close the TCP connection after sending this message?
 
 - Yes, because the HTTP response indicated that only one object was requested in the HTTP GET request.
 
-# WHY WEB CACHING?
+# 2.2-9 WHY WEB CACHING?
 
 
 Which of the following are advantages of using a web cache? Sselect one or more answers.
@@ -308,7 +306,7 @@ Which of the following are advantages of using a web cache? Sselect one or more 
 
 - ```Caching generally provides for a faster page load time at the client, if  the web cache is in the client’s institutional network, because the page is loaded from the nearby cache rather than from the distant server.```
 
-# HTTP/2 VERSUS HTTP/1.1.
+# 2.2-10 HTTP/2 VERSUS HTTP/1.1.
 
 
   Which of the following are changes between HTTP 1.1 and HTTP/2? Note: select one or more answers.
@@ -325,7 +323,7 @@ Which of the following are advantages of using a web cache? Sselect one or more 
 
 - ```HTTP/2 allows objects in a persistent connection to be sent in a client-specified priority order. ```
 
-# WHAT'S IN AN HTTP REPLY?
+# 2.2-11 WHAT'S IN AN HTTP REPLY?
 
 
 Which of the following pieces of information will appear in a server’s application-level HTTP reply message? (Check all that apply.)
@@ -350,7 +348,7 @@ Which of the following pieces of information will appear in a server’s applica
 
 
 
-# IF-MODIFIED-SINCE.
+# 2.2-12 IF-MODIFIED-SINCE.
 
 
 What is the purpose of the If-Modified-Since field in a HTTP GET request message
@@ -370,7 +368,7 @@ What is the purpose of the If-Modified-Since field in a HTTP GET request message
 
 - To allow the server to indicate to the client that it (the client) should cache this object.
 
-# COOKIES.
+# 2.2-13 COOKIES.
 
 
 What is the purpose of a cookie value in the HTTP GET request?
@@ -390,7 +388,7 @@ What is the purpose of a cookie value in the HTTP GET request?
 
 - The cookie value is an encoding of a user email address associated with the GET request.
 
-# HTTP GET (EVEN MORE).
+# 2.2-14 HTTP GET (EVEN MORE).
 
 
 Suppose a client is sending an HTTP GET message to a web server, gaia.cs.umass.edu. Suppose the client-to-server HTTP GET message is the following:
@@ -414,7 +412,7 @@ Does the client have a cached copy of the object being requested?
 
 - ```Yes, because this is a conditional GET.```
 
-# WHAT HAPPENS AFTER AN HTTP REPLY?
+# 2.2-15 WHAT HAPPENS AFTER AN HTTP REPLY?
 
 
 Suppose an HTTP server sends the following HTTP response message a client:
@@ -439,8 +437,7 @@ Will the web server close the TCP connection after sending this message?
 
 - There’s not enough information to answer this question.
 
-# 2.3
-# E-MAIL DELAYS.
+# 2.3-1 E-MAIL DELAYS.
 
 
 How many RTTs are there from when a client first contacts an email server (by initiating a TCP session) to when the client can begin sending the email message itself – that is following all initial TCP or SMTP handshaking required?
@@ -462,7 +459,7 @@ Recall the figure below from our class notes:
 - ```3```
 
 
-# COMPARING AND CONTRASTING HTTP AND SMTP.
+# 2.3-2 COMPARING AND CONTRASTING HTTP AND SMTP.
 
 
 Which of the following characteristics apply to HTTP only (and do not apply to SMTP)?  Note: check one or more of the characteristics below.
@@ -491,7 +488,7 @@ Which of the following characteristics apply to HTTP only (and do not apply to S
 
 - Is able to use a persistent TCP connection to transfer multiple objects.
 
-# COMPARING AND CONTRASTING HTTP AND SMTP (2).
+# 2.3-3 COMPARING AND CONTRASTING HTTP AND SMTP (2).
 
 
 Which of the following characteristics apply to SMTP only (and do not apply to HTTP)?  Note: check one or more of the characteristics below.
@@ -521,7 +518,7 @@ Which of the following characteristics apply to SMTP only (and do not apply to H
 - Is able to use a persistent TCP connection to transfer multiple objects.
 
 
-# COMPARING AND CONTRASTING HTTP AND SMTP (3).
+# 2.3-4 COMPARING AND CONTRASTING HTTP AND SMTP (3).
 
 
 Which of the following characteristics apply to both HTTP and SMTP? Note: check one or more of the characteristics below.
@@ -544,7 +541,7 @@ Which of the following characteristics apply to both HTTP and SMTP? Note: check 
 
 - Uses CRLF.CRLF to indicate end of message.
 
-# WHICH E-MAIL PROTOCOL?
+# 2.3-5 WHICH E-MAIL PROTOCOL?
 
 
   Match the functionality of a protocol with the name of a the email protocol (if any) that implements that functionality.
@@ -556,8 +553,7 @@ Which of the following characteristics apply to both HTTP and SMTP? Note: check 
 - Pulls email to a mail client from a mail server.
     - ```IMAP```
 
-# 2.4
-# DNS FUNCTIONS
+# 2.4-1 DNS FUNCTIONS
 
 
 . Match the function of a server to a given type of DNS server in the  DNS server hierarchy.
@@ -571,7 +567,7 @@ Which of the following characteristics apply to both HTTP and SMTP? Note: check 
 - Highest level of the DNS hierarchy, knows how to reach servers responsible for a given domain (e.g., *.com, *.edu).
     - ```DNS root servers```
 
-# WHY DOES THE DNS PERFORM CACHING?
+# 2.4-2 WHY DOES THE DNS PERFORM CACHING?
 
 
 What is the value of caching in the local DNS name server? Check all that apply.
@@ -588,7 +584,7 @@ What is the value of caching in the local DNS name server? Check all that apply.
 
 - DNS caching provides prioritized access to the root servers, since the DNS request is from a local DNS cache.
 
-# WHAT'S IN THE DNS TYPE A RESOURCE RECORD?
+# 2.4-3 WHAT'S IN THE DNS TYPE A RESOURCE RECORD?
 
 
 What information does the type “A” resource record hold in the DNS database? Check all that apply.
@@ -605,7 +601,7 @@ What information does the type “A” resource record hold in the DNS database?
 
 - ```A hostname and an IP address.```
 
-# DNS IN ACTION (1).
+# 2.4-4 DNS IN ACTION (1).
 
 
 Suppose that the local DNS server caches all information coming in from all root, TLD, and authoritative DNS servers for 20 time units. (Thus, for example, when a root server returns the name and address of a TLD server for .com, the cache remembers that this is the TLD server to use to resolve a .com name).  Assume also that the local cache is initially empty, that iterative DNS queries are always used, that DNS requests are just for name-to-IP-address translation, that 1 time unit is needed for each server-to-server or host-to-server (one way) request/response, and that there is only one authoritative name server (each) for any .edu or .com domain.
@@ -639,7 +635,7 @@ Which of the requests require 8 time units to be resolved?<br>
 
 - ```The request at t=1.```
 
-# DNS IN ACTION (2).
+# 2.4-5 DNS IN ACTION (2).
 
 
 Suppose that the local DNS server caches all information coming in from all root, TLD, and authoritative DNS servers for 20 time units. (Thus, for example, when a root server returns the name and address of a TLD server for .com, the cache remembers that this is the TLD server to use to resolve a .com name).  Assume also that the local cache is initially empty, that iterative DNS queries are always used, that DNS requests are just for name-to-IP-address translation, that 1 time unit is needed for each server-to-server or host-to-server (one way) request/response, and that there is only one authoritative name server (each) for any .edu or .com domain.
@@ -672,7 +668,7 @@ Which of the requests require 6 time units to be resolved?<br>
 
 - The request at t=1.
 
-# DNS IN ACTION (3).
+# 2.4-6 DNS IN ACTION (3).
 
 
 Suppose that the local DNS server caches all information coming in from all root, TLD, and authoritative DNS servers for 20 time units. (Thus, for example, when a root server returns the name and address of a TLD server for .com, the cache remembers that this is the TLD server to use to resolve a .com name).  Assume also that the local cache is initially empty, that iterative DNS queries are always used, that DNS requests are just for name-to-IP-address translation, that 1 time unit is needed for each server-to-server or host-to-server (one way) request/response, and that there is only one authoritative name server (each) for any .edu or .com domain.
@@ -705,7 +701,7 @@ Which of the requests require 2 time units to be resolved?<br>
 
 - The request at t=1.
 
-# THE LOCAL DNS SERVER.
+# 2.4-7 THE LOCAL DNS SERVER.
 
 
 Check all of the phrases below that state a true property of a local DNS server.
@@ -722,7 +718,7 @@ Check all of the phrases below that state a true property of a local DNS server.
 
 - The local DNS server is only contacted by a local host if that local host is unable to resolve a name via iterative or recursive queries into the DNS hierarchy.
 
-# THE DNS AUTHORITATIVE NAME SERVER.
+# 2.4-8 THE DNS AUTHORITATIVE NAME SERVER.
 
 
 What is the role of an authoritative name server in the DNS? (Check all that apply)
@@ -740,8 +736,7 @@ What is the role of an authoritative name server in the DNS? (Check all that app
 - ```It provides the definitive answer to the query with respect to a name in the authoritative name server's domain.```
 
 # No 2.5
-# 2.6
-# .6-4
+# 2.6-1 .6-4
 
 
 Manifest file. What is the purpose of a manifest file in a streaming multimedia setting?
@@ -758,7 +753,7 @@ Manifest file. What is the purpose of a manifest file in a streaming multimedia 
 
 - ```To let a client know where it can retrieve different video segments, encoded at different rates```
 
-# CDNS.
+# 2.6-2 CDNS.
 
 
 What approach is taken by a CDN to stream content to hundreds of thousands of simultaneous users?
@@ -775,7 +770,7 @@ What approach is taken by a CDN to stream content to hundreds of thousands of si
 
 - Serve video from a single central “mega-server” with ultra-high-speed network connectivity, and high-speed storage.
 
-# STREAMING VIDEO DEFINITIONS
+# 2.6-3 STREAMING VIDEO DEFINITIONS
 
 
 . Match the definition/function of an element or approach in a networked streaming video system, with its name.
@@ -789,7 +784,7 @@ What approach is taken by a CDN to stream content to hundreds of thousands of si
 - A CDN approach that stores content in access networks, close to clients.
     - ```Enter deep```
 
-# WHAT IS DASH?
+# 2.6-4 WHAT IS DASH?
 
 
 In DASH (Dynamic, Adaptive Streaming over HTTP), a server divides a video file into chunks that ... (pick best completion from below)
@@ -809,8 +804,7 @@ In DASH (Dynamic, Adaptive Streaming over HTTP), a server divides a video file i
 
 - ... are downloaded just before their playout time.  Chunking is used primarily because a viewer may jump around (e.g., fast forward) in a video.
 
-# 2.7
-# UDP SOCKETS.
+# 2.7-1 UDP SOCKETS.
 
 
 Which of the following characteristics below are associated with a UDP socket? Check one or more that apply.
@@ -841,7 +835,7 @@ Which of the following characteristics below are associated with a UDP socket? C
 
 - ```data from different clients can be received on the same socket```
 
-# TCP SOCKETS.
+# 2.7-2 TCP SOCKETS.
 
 
 Which of the following characteristics below are associated with a TCP socket? Check one or more that apply.
@@ -872,7 +866,7 @@ Which of the following characteristics below are associated with a TCP socket? C
 
 - the application must explicitly specify the IP destination address and port number for each group of bytes written into a socket
 
-# SERVER REPLY (UDP).
+# 2.7-3 SERVER REPLY (UDP).
 
 
 How does the networked application running on a server know the client IP address and the port number to reply to in response to a received datagram?
@@ -889,7 +883,7 @@ How does the networked application running on a server know the client IP addres
 
 - As the result of performing the accept() statement, the server has created a new socket that is bound to that specific client, and so sending into this new socket (without explicitly specifying the client IP address and port number) is sufficient to ensure that the sent data will be addressed to the correct client.
 
-# HOW MANY SOCKETS?
+# 2.7-4 HOW MANY SOCKETS?
 
 
 Suppose a Web server has five ongoing connections that use TCP receiver port 80, and assume there are no other TCP connections (open or being opened or closed) at that server.  How many TCP sockets are in use at this server?
@@ -906,7 +900,7 @@ Suppose a Web server has five ongoing connections that use TCP receiver port 80,
 
 - 4
 
-# SOCKET CONNECT().
+# 2.7-5 SOCKET CONNECT().
 
 
 What happens when a socket connect() procedure is called/invoked?

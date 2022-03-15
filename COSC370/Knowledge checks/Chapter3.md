@@ -738,3 +738,230 @@ Consider TCP’s Fast Retransmit optimization (see Figure 3.37 from the text, be
 
 - ```If the channel can reorder messages, a triple duplicate ACK can occur even though a message is not lost; since it's possible that a message has just been reordered and has not yet arrived when the three duplicate ACKs were generated.```
 
+# 3.6-1 CONGESTION CONTROL VERSUS FLOW CONTROL.
+
+
+Consider the five images below.  Indicate which of these images suggest the need for flow control (the others would suggest the need for congestion control).
+
+![](./chapter3photo/3.6.1.jpg)
+
+- ```A glass overflowing```
+
+
+- ```A talking head```
+
+
+- A penguin crowd
+
+
+- A crowd of people
+
+
+- Car traffic
+
+# 3.6-2 TWO CONGESTED SENDERS.
+
+
+Consider the figure below, which shows the application-to-application throughput achieved when two senders are competing at a shared bottleneck link.  Suppose that when the overall arrival rate,  lambdain' (for each sender) is close to R/2, the throughput to the application layer (at each receiver), lambdaout, is equal to 0.8 *  lambdain'.
+
+![](./chapter3photo/3.6.2.jpg)
+
+What fraction of the packets transmitted at the sender are retransmissions?
+
+- ```.20```
+
+
+- .80
+
+
+- .50
+
+
+- 0
+
+
+# 3.6-3 NETWORK-ASSISTED OR END-END CONGESTION CONTROL?
+
+
+Which of the following actions are used in network-assisted congestion control (say versus end-end congestion control) to signal congestion. Check all that apply.
+
+
+- ```A router marks a field in the datagram header at a congested router.```
+
+
+- ```A router sends an ICMP message to a host telling it to slow down its sending rate.```
+
+
+- The transport-layer receiver informs sender of the size of its (transport-payer receiver) receive window.
+
+
+- A router drops a packet at a congested router.
+
+
+- The sender decreases its sending rate in response to a measured increase in the RTT.
+
+
+- A datagram experiences delay at a congested network router, which is then measured by the sender and used to decrease the sending rate.
+
+
+- A sender decreases its sending rate in response to packet loss detected via its transport-layer ACKing.
+
+# 3.6-4 NETWORK-ASSISTED OR END-END CONGESTION CONTROL (2)?
+
+
+Which of the following actions are associated with end-end congestion control (say versus network-assisted congestion control). Check all that apply.
+
+
+- ```A sender decreases its sending rate in response to packet loss detected via its transport-layer ACKing.```
+
+
+- ```The transport-layer sender decreases its sending rate in response to a measured increase in the RTT.```
+
+
+- ```A router drops a packet at a congested router, which causes the transport-layer sender to infer that there is congestion due to the missing ACK for the lost packet.```
+
+
+- ```A datagram experiences delay at a congested network router, which is then measured by the sender and used to decrease the sending rate.```
+
+
+- The transport-layer receiver informs sender of the size of its (transport-payer receiver) receive window.
+
+
+- A router marks a field in the datagram header at a congested router.
+
+
+- A router sends an ICMP message to a host telling it to slow down its sending rate.
+
+# 3.6-5 DIFFERENT APPROACHES TOWARDS CONGESTION CONTROL.
+
+
+Use the pulldown menu to match a congestion control approach to how the sender detects congestion.
+
+- The sender infers segment loss from the absence of an ACK from the receiver.
+    - ```end-end```
+- Bits are set at a congested router in a sender-to-receiver datagram, and bits are in the returned to the sender in a receiver-to sender ACK, to indicate congestion to the sender.
+    - ```network-assisted```
+- The sender measures RTTs and uses the current RTT measurement to infer the level of congestion.
+    - ```delay-based```
+
+# 3.7-1 TCP’S AIMD ALGORITHM.
+
+
+Which of the following statements about TCP’s Additive-increase-multiplicative-decrease (AIMD) algorithm are true?  Check all that are true.
+
+
+- AIMD always cuts the congestion window size, cwnd, in half whenever loss is detected.
+
+
+- ```AIMD cuts the congestion window size, cwnd, in half whenever loss is detected by a triple duplicate ACK.```
+
+
+- AIMD uses observed packet loss to detect congestion.
+
+
+- ```AIMD is a end-end approach to congestion control.```
+
+
+- AIMD is a network-assisted approach to congestion control.
+
+
+- AIMD uses the measured RTT delay to detect congestion.
+
+
+- ```AIMD cuts the congestion window size,cwnd, i  to 1 whenever a timeout occurs.```
+
+# 3.7-2 TCP’S AIMD ALGORITHM (2).
+
+
+How is the sending rate typically regulated in a TCP implementation?
+
+
+- By using the retransmission timeout timer and counting the number of bytes sent since the last timeout to compute the sending rate since that last timeout,  and then making sure its sending rate never exceed the rate set by AIMD.
+
+
+- ```By keeping a window of size cwnd over the sequence number space, and making sure that no more than cwnd bytes of data are outstanding (i.e, unACKnowledged).  The size of cwnd is regulated by AIMD.```
+
+# 3.7-3 TCP’S SLOWSTART ALGORITHM.
+
+
+  Which of the following best completes this sentence: "In the absence of loss, TCP slow start increases the sending rate ... "
+
+
+- ... slower than AIMD, that’s why it’s called Slowstart."
+
+
+- ```" ... faster than AIMD.  In fact, slowstart increases the sending rate exponentially fast per RTT."```
+
+
+- "... at the same rate as AIMD."
+
+# 3.7-4 UNCONTROLLED TRANSPORT-LAYER SENDERS.
+
+
+Consider the transport-layer flows interacting at a congested link.  In the face of such congestion, what happens at this link to a transport-layer flow that does not cut back on its sending rate?
+
+
+- The router will send a signal to the TCP sender that would force the TCP sender to cut its rate in half.
+
+
+- ```Nothing different from the other flows crossing the congested link.```
+
+
+- That sender’s datagrams will be preferentially dropped at the congested link.
+
+# 3.7-5 TCP CUBIC.
+
+
+Assuming that the congestion window size,cwnd, has not yet reached Wmax, TCP CUBIC will ... (check all that apply)
+
+
+
+- ```... always have a window size, cwnd, and hence a sending rate, higher than that of AIMD (assuming a given window size, Wmax, at which loss would occur).```
+
+- ... have a sending rate that always increases faster than that of AIMD.
+
+- ```... increase its sending rate faster than AIMD when cwnd is  far away from Wmax, but increase slower than AIMD when cwnd is closer to Wmax```
+
+
+# 3.7-6 DELAY-BASED CONGESTION CONTROL. 
+
+
+For delay-based congestion control, match the sender action to the relationship  of the currently measured throughput to the value of cwnd/RTTmin
+
+- The currently measured throughput is greater than cwnd/RTTmin
+    - ```This should never happen```
+- The currently measured throughput is equal to or a bit less than than cwnd/RTTmin
+    - ```increase the sending rate```
+- The currently measured throughput is much less that than cwnd/RTTmin
+    - ```decrease the sending rate```
+
+# 3.8-1 QUIC STREAMS.
+
+
+What are advantages of the streams concept in QUIC? Select all that apply.
+
+
+- With N streams, the overall throughput can be increased by a factor of N, since each stream has its own separate congestion control.
+
+
+- ```Since each stream has its own error control, if one stream experiences an error (e.g., lost or damaged segment), the other streams are unaffected.```
+
+
+- ```Streams allow concurrent retrieval of web objects, while avoiding Head of the Line (HOL) blocking.```
+
+# 3.8-2 QUIC: AN APPLICATION-LAYER PROTOCOL.
+
+
+What are advantages of implementing transport-layer functionality in QUIC at the application layer? Select all that apply.
+
+
+- ```As an application-layer protocol, QUIC can be updated/modified at “app frequency” rather than at the frequency of operating system updates.```
+
+
+- QUIC performs both congestion control and error recovery different from TCP, leveraging all of the knowledge that has built up since TCP was first standardized, and therefore has better performance than TCP.
+
+
+- QUIC’s performance can be better optimized at the application-layer, so it will have better performance than if these functions were implremented in the operating system.
+
+
+- ```QUIC can establish all connection parameters (security, reliability, flow and congestion control)in just one handshake rather than separately in two.```
