@@ -106,3 +106,5 @@ Similar to alway true
 > This will allow us to get any information from the table.
 > >
 > This method will also work when doing blind injection
+
+#Symbol comments out the rest (seems optional inside dvwa)
