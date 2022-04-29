@@ -467,3 +467,173 @@ What is the purpose of the Dynamic Host Configuration Protocol?
 
 - To configure the set of available open ports (and hence well-known services) for a server.
 
+# 4.4-1 DESTINATION-BASED MATCH+ACTION.
+
+Destination-based forwarding, which we studied in section 4.2, is a specific instance of match+action and generalized forwarding.  Select the phrase below which best completes the following sentence:
+"In destination-based forwarding, ..."
+
+- ... after matching on the source and destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that source and destination IP address pair.
+
+
+-  ... after matching on the port number in the segment's header, the action taken is to decide whether or not to drop the datagram containing that segment.
+
+
+- ``` ... after matching on the destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that destination IP address.```
+
+
+- ... after matching on the port number in the segment's header, the action taken is to forward the datagram to the output port associated with that port number.
+
+
+- ... after matching on the 48-bit link-layer destination MAC address, the action taken is to forward the datagram to the output port associated with that link-layer address.
+
+
+-  ... after matching on the destination IP address in the datagram header, the action taken is to decide whether or not to drop that datagram.
+
+
+- ... after matching on the URL contained in an HTTP GET request in the TCP segment within the IP datagram, the action taken is to determine the IP address of the server associated with that URL, and to forward the datagram to the output port associated with that destination IP address.
+
+# 4.4-2 GENERALIZED MATCH+ACTION.
+
+Which of the following match+actions can be taken in the generalized OpenFlow 1.0 match+action paradigm that we studied in Section 4.4?  Check all that apply.
+
+# 4.4-3 WHAT FIELDS CAN BE MATCHED IN GENERALIZED MATCH+ACTION.
+
+Which of the following fields in the frame/datagram/segment/application-layer message can be matched in OpenFlow 1.0? Check all that apply.
+
+- ```IP destination address```
+
+
+- URL in HTTP message
+
+
+- ```IP source address```
+
+
+- ```IP type-of-service field```
+
+
+- ```Upper layer protocol field```
+
+
+- ```Source and/or destination port number```
+
+
+- Number of bytes in the datagram
+
+
+- Time-to-live field
+
+# 4.4-4 MATCH+ACTION IN OPENFLOW 1.0.
+
+Consider the figure below that shows the generalized forwarding table in a router.  Recall that a * represents a wildcard value. Now consider an arriving datagram with the IP source and destination address fields indicated below.  For each source/destination IP address pair, indicate which rule is matched. Note: assume that a rule that is earlier in the table takes priority over a rule that is later in the table and that a datagram that matches none of the table entries is dropped.
+
+![4.4.4.jpg](./chapter4photo/4.4.4.jpg)
+
+
+- Source: 1.2.56.32 Destination:128.116.40.186
+    - ```Rule 2, with action _drop_```
+
+- Source: 65.92.15.27 Destination: 3.4.65.76
+    - ```Rule 1, with action _forward(2)_```
+
+- Source: 10.1.2.3 Destination: 7.8.9.2
+    - ```Rule 3, with action _send to controller_```
+
+- Source: 10.1.34.56 Destination: 54.72.29.90
+    - ```No match to any rule.```
+
+# 4.4-5 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES.
+
+
+Consider the network below.  We want to specify the match+action rules at s3 so that only the following network-wide behavior is allowed:
+traffic from 128.119/16 and destined to 137.220/16 is forwarded on the direct link from s3 to s1;
+traffic from 128.119/16 and destined to 67.56/16 is forwarded on the direct link from s3 to s2;
+incoming traffic via port 2 or 3, and destined to 128.119/16 is forwarded to 128.119/16 via local port 1. 
+No other forwarding should be allowed.  In particular s3 should not forward traffic arriving from 137.220/16 and destined for 67.56/16 and vice versa.
+From the list of match+action rules below, select the rules to include in s3's flow table to implement this forwarding behavior. Assume that if a packet arrives and finds no ddmatch rule, it is dropped.
+
+![4.4.5.jpg](./chapter4photo/4.4.5.jpg)
+
+- Input port:1 ; Dest: 137.220/16      Action: forward(3)
+
+
+- Input port:1 ; Dest: 137.220/16      Action: forward(2)
+
+
+- Input port: 2; Dest: 67.56/16         Action: forward(3)
+
+
+- Input port: 3; Dest: 128.119/16     Action: forward(1)
+
+
+- Input port: 1; Dest: 67.56/16         Action: forward(3)
+
+
+- Input port: 1; Dest: 67.56/16         Action: forward(2)
+
+
+- Input port: 2; Dest: 128.119/16     Action: forward(1)
+
+
+- Input port: 3; Dest: 137.220/16     Action: forward(2)
+
+# 4.4-6 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES (MORE).
+
+Consider the network below.  We want to specify the match+action rules at s3 so that s3 acts only as a relay for traffic between 137.220/16 and 67.56/16.  In particular s3 should not accept/forward and traffic to/from 128.119/16.
+From the list of match+action rules below, select the rules to include in s3's flow table to implement this forwarding behavior. Assume that if a packet arrives and finds no ddmatch rule, it is dropped.
+
+![4.4.5.jpg](./chapter4photo/4.4.5.jpg)
+
+
+# 4.5-1 WHAT'S A "MIDDLEBOX"? 
+
+Which of the following network devices can be thought of as a "middlebox"? Check all that apply.
+
+- SDN controller
+
+- IP router
+
+
+- WiFi base station
+
+
+- ```Network Address Translation box```
+
+
+- ```HTTP load balancer```
+
+
+- ```HTTP cache```
+
+# 4.5-2 THE "THIN WAIST" OF THE INTERNET.
+
+What protocol (or protocols) constitutes the "thin waist" of the Internet protocol stack? Check all that apply.
+
+- ```IP```
+
+
+- HTTP
+
+
+- TCP
+
+
+- DNS
+
+
+- WiFi
+
+
+- Ethernet
+
+# 4.5-3 THE END-TO-END PRINCIPLE.
+
+Which of the statements below are true statements regarding  the "end-to-end principle"? Check all that apply.
+
+- The end-to-end argument advocates placing functionality at the network edge to optimize performance, such as end-end delay.
+
+
+- ```The end-to-end argument advocates placing functionality at the network edge because some functionality cannot be completely and correctly implemented in the network, and so needs to be placed at the edge in any case, making in-network implementation redundant.```
+
+
+- ```The end-to-end argument allows that some redundant functionality might be placed both in-network and at the network edge in order to enhance performance.```
