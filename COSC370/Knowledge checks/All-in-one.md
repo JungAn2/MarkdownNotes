@@ -4,7 +4,7 @@ Which of the following descriptions below correspond to a "nuts-and-bolts" view 
 
 - A place I go for information, entertainment, and to communicate with people.
 - ```A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.```
-- > A collection of billions of computing devices, and packet switches interconnected by links.
+- ```A collection of billions of computing devices, and packet switches interconnected by links.```
 - A platform for building network applications.
 - ```A "network of networks".```
 
@@ -1076,7 +1076,7 @@ What is meant by transport-layer multiplexing?
 - Receiving a transport-layer segment from the network layer, extracting the payload, determining the destination IP address for the data, and then passing the segment and the IP address back down to the network layer.
 
 
- # 3.2-2 MULTIPLEXING/DEMULTIPLEXING: UDP PORT NUMBERS.
+ # 3.2-3 MULTIPLEXING/DEMULTIPLEXING: UDP PORT NUMBERS.
 
 True or False:  When multiple UDP clients send UDP segments to the same destination port number at a receiving host, those segments (from different senders) will always be directed to the same socket at the receiving host.
 
@@ -1084,7 +1084,7 @@ True or False:  When multiple UDP clients send UDP segments to the same destinat
 - ```True```
 
 
-# 3.2-3 MULTIPLEXING/DEMULTIPLEXING: TCP PORT NUMBERS.
+# 3.2-4 MULTIPLEXING/DEMULTIPLEXING: TCP PORT NUMBERS.
 
 True or False:  When multiple TCP clients send TCP segments to the same destination port number at a receiving host, those segments (from different senders) will always be directed to the same socket at the receiving host.
 
@@ -1092,7 +1092,7 @@ True or False:  When multiple TCP clients send TCP segments to the same destinat
 - ```False```
 
 
-# 3.2-4 MULTIPLEXING UDP WITH IDENTICAL PORT NUMBERS.
+# 3.2-5 MULTIPLEXING UDP WITH IDENTICAL PORT NUMBERS.
 
 True or False:  It is possible for two UDP segments  to be sent from the same socket with source port 5723 at a server to two different clients.
 
@@ -1100,7 +1100,7 @@ True or False:  It is possible for two UDP segments  to be sent from the same so
 - ```True```
 
 
-# 3.2-5 MULTIPLEXING TCP WITH IDENTICAL PORT NUMBERS.
+# 3.2-6 MULTIPLEXING TCP WITH IDENTICAL PORT NUMBERS.
 
 True or False:  It is possible for two TCP segments with source port 80 to be sent by the sending host to different clients.
 
@@ -1227,8 +1227,8 @@ The destination IP address of the IP datagram containing the UDP segment (B) sen
 - The destination IP address of the IP datagram containing the UDP segment (B) sent in reply is: 
     - ```60.54.75.24```
 
-# 3.4-1 RELIABLE DATA TRANSFER PROTOCOL MECHANISMS.
 
+# 3.4-1 RELIABLE DATA TRANSFER PROTOCOL MECHANISMS.
 
 Consider the purposes/goals/use of different reliable data transfer protocol mechanisms. For the given purpose/goal/use match it to the RDT mechanism that is used to implement the given purpose/goal/use.
 
@@ -1372,8 +1372,8 @@ Suppose a packet is 10K bits long, the channel transmission rate connecting a se
 Which of the following statements about pipelining are true?  One or more statements may be true.
 
 - With pipelining, a packet is only retransmitted if that packet, or its ACK, has been lost.
-- ``With a pipelined sender, there may be transmitted packets “in flight” – propagating through the channel – packets that the sender has sent but that the receiver has not yet received.``
-- ``A pipelined sender can have transmitted multiple packets for which the sender has yet to receive an ACK from the receiver. ``
+- ```With a pipelined sender, there may be transmitted packets “in flight” – propagating through the channel – packets that the sender has sent but that the receiver has not yet received.```
+- ```A pipelined sender can have transmitted multiple packets for which the sender has yet to receive an ACK from the receiver. ```
 - With pipelining, a receiver will have to send fewer acknowledgments as the degree of pipelining increases
 
 
@@ -1750,6 +1750,7 @@ Match the names of the principal router components (A,B,C,D below) with their fu
 - (D) is
     - ```the routing processor, operating primarily in the control plane.```
 
+
 # 4.2-2 WHERE DOES DESTINATION ADDRESS LOOKUP HAPPEN?
 
 Where in a router is the destination IP address looked up in a forwarding table to determine the appropriate output port to which the datagram should be directed?
@@ -1816,7 +1817,7 @@ What is meant by Head of the Line (HOL) blocking?
 - A queued datagram receiving service at the front of a queue prevents other datagrams in queue from receiving service.
 
 
-# 4.2-7 SCHEDULING.
+# 4.2-7 PACKET SCHEDULING (SCENARIO 1, FCFS).
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under FCFS scheduling. Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
 [Note: You can find more examples of problems similar to this here.]
@@ -1831,7 +1832,7 @@ Note:
 - ``` 1 2 3 4 5 6 7 ```
 
 
-# 4.2-8 SCHEDULING.
+# 4.2-8 PACKET SCHEDULING (SCENARIO 1, PRIORITY).
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under priority scheduling, where red packets have higher priority.
 Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
@@ -1846,7 +1847,7 @@ Note:
 - ``` 1 2 3 5 4 7 6 ```
 
 
-# 4.2-9 SCHEDULING.
+# 4.2-9 PACKET SCHEDULING (SCENARIO 1, RR).
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under round robin scheduling, where red starts a round if there are both red and green packets ready to transmit after an empty slot.
 Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
@@ -1861,7 +1862,7 @@ Note:
 - ``` 1 3 2 4 5 7 6 ```
 
 
-# 4.2-10 PACKET SCHEDULING.
+# 4.2-10 PACKET SCHEDULING (SCENARIO 2, FCFS).
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under FCFS scheduling. Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
 
@@ -1870,7 +1871,7 @@ Consider the pattern of red and green packet arrivals to a router’s output por
 - ``` 1 2 3 4 5 6 7 ```
 
 
-# 4.2-11 PACKET SCHEDULING.
+# 4.2-11 PACKET SCHEDULING (SCENARIO 2, PRIORITY).
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under priority scheduling, where red packets have higher priority.
 Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
@@ -1880,7 +1881,7 @@ Give your answer as 7 ordered digits (each corresponding to the packet number of
 - ``` 1 2 4 3 5 6 7 ```
 
 
-# 4.2-12 PACKET SCHEDULING.
+# 4.2-12 PACKET SCHEDULING (SCENARIO 2, RR).
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under round robin scheduling, where red starts a round if there are both red and green packets ready to transmit after an empty slot.
 Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
@@ -1944,7 +1945,7 @@ What is meant by an IP subnet? (Check zero, one or more of the following charact
 - ```A set of device interfaces that can physically reach each other without passing through an intervening router.```
 
 
-# 4.3-5 SUBNETTING.
+# 4.3-5 SUBNETTING(A).
 
 Consider the three subnets in the diagram below.
 
@@ -1959,7 +1960,7 @@ What is the maximum # of interfaces in the 223.1.2/24 network?
 - There's no a priori limit on the number of interfaces in this subnet.
 
 
-# 4.3-6 SUBNETTING.
+# 4.3-6 SUBNETTING(B).
 
 Consider the three subnets in the diagram below.
 
@@ -1974,7 +1975,7 @@ What is the maximum # of interfaces in the 223.1.3/29 network?
 - 128
 
 
-# 4.3-7 SUBNETTING.
+# 4.3-7 SUBNETTING(C).
 
 Consider the three subnets in the diagram below.
 
@@ -2052,6 +2053,14 @@ Destination-based forwarding, which we studied in section 4.2, is a specific ins
 
 Which of the following match+actions can be taken in the generalized OpenFlow 1.0 match+action paradigm that we studied in Section 4.4?  Check all that apply.
 
+- ```... after matching on the 48-bit link-layer destination MAC address, the action taken is to forward the datagram to the output port associated with that link-layer address.```
+- ``` ... after matching on the destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that destination IP address.```
+- ```... after matching on the port number in the segment's header, the action taken is to decide whether or not to drop that datagram containing that segment.```
+- ... after matching on the URL contained in an HTTP GET request in the TCP segment within the IP datagram, the action taken is to determine the IP address of the server associated with that URL, and to forward the datagram to the output port associated with that destination IP address.
+- ```... after matching on the port number in the segment's header, the action taken is to forward the datagram to the output port associated with that destination IP address.```
+- ```... after matching on the source and destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that source and destination IP address pair.```
+- ``` ... after matching on the destination IP address in the datagram header, the action taken is to decide whether or not to drop that datagram.```
+
 
 # 4.4-3 WHAT FIELDS CAN BE MATCHED IN GENERALIZED MATCH+ACTION.
 
@@ -2090,36 +2099,22 @@ Consider the figure below that shows the generalized forwarding table in a route
 # 4.4-5 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES.
 
 Consider the network below.  We want to specify the match+action rules at s3 so that only the following network-wide behavior is allowed:
-traffic from 128.119/16 and destined to 137.220/16 is forwarded on the direct link from s3 to s1;
-traffic from 128.119/16 and destined to 67.56/16 is forwarded on the direct link from s3 to s2;
-incoming traffic via port 2 or 3, and destined to 128.119/16 is forwarded to 128.119/16 via local port 1. 
-No other forwarding should be allowed.  In particular s3 should not forward traffic arriving from 137.220/16 and destined for 67.56/16 and vice versa.
+1. traffic from 128.119/16 and destined to 137.220/16 is forwarded on the direct link from s3 to s1;
+2. traffic from 128.119/16 and destined to 67.56/16 is forwarded on the direct link from s3 to s2;
+3. incoming traffic via port 2 or 3, and destined to 128.119/16 is forwarded to 128.119/16 via local port 1. 
+4. No other forwarding should be allowed.  In particular s3 should not forward traffic arriving from 137.220/16 and destined for 67.56/16 and vice versa.
 From the list of match+action rules below, select the rules to include in s3's flow table to implement this forwarding behavior. Assume that if a packet arrives and finds no ddmatch rule, it is dropped.
 
 ![4.4.5.jpg](./chapter4photo/4.4.5.jpg)
 
-- Input port:1 ; Dest: 137.220/16      Action: forward(3)
-
-
-- Input port:1 ; Dest: 137.220/16      Action: forward(2)
-
-
-- Input port: 2; Dest: 67.56/16         Action: forward(3)
-
-
-- Input port: 3; Dest: 128.119/16     Action: forward(1)
-
-
-- Input port: 1; Dest: 67.56/16         Action: forward(3)
-
-
-- Input port: 1; Dest: 67.56/16         Action: forward(2)
-
-
-- Input port: 2; Dest: 128.119/16     Action: forward(1)
-
-
 - Input port: 3; Dest: 137.220/16     Action: forward(2)
+- ```Input port: 3; Dest: 128.119/16     Action: forward(1)```
+- ```Input port:1 ; Dest: 137.220/16      Action: forward(2)```
+- ```Input port: 1; Dest: 67.56/16         Action: forward(3)```
+- Input port: 2; Dest: 67.56/16         Action: forward(3)
+- Input port: 1; Dest: 67.56/16         Action: forward(2)
+- ```Input port: 2; Dest: 128.119/16     Action: forward(1)```
+- Input port:1 ; Dest: 137.220/16      Action: forward(3)
 
 
 # 4.4-6 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES (MORE).
@@ -2128,6 +2123,26 @@ Consider the network below.  We want to specify the match+action rules at s3 so 
 From the list of match+action rules below, select the rules to include in s3's flow table to implement this forwarding behavior. Assume that if a packet arrives and finds no ddmatch rule, it is dropped.
 
 ![4.4.5.jpg](./chapter4photo/4.4.5.jpg)
+
+
+- Input port: 1; Dest: 67.56/16         Action: forward(3)
+- ```Input port: 2; Dest: 67.56/16         Action: forward(3)```
+- Input port: 1; Dest: 67.56/16         Action: forward(2)
+- Input port:1 ; Dest: 137.220/16      Action: forward(3)
+- Input port: 3; Dest: 128.119/16     Action: forward(1)
+- ```Input port: 3; Dest: 137.220/16     Action: forward(2)```
+- Input port: 2; Dest: 128.119/16     Action: forward(1)
+- Input port:1 ; Dest: 137.220/16      Action: forward(2)
+
+
+# 4.4-7 GENERALIZED FORWARDING.  
+
+What is meant by generalized forwarding (as opposed to destination-based forwarding) in a router or switch?
+
+- ```Any of several actions (including drop (block), forward to a given interface, or duplicate-and-forward) can be made based on the contents of one or more packet header fields.```
+- None of the other answers is a correct definition of generalized forwarding.
+- The decision about which output port to forward a packet to can be made based on the link-type of the outgoing port (e.g., Ethernet versus WiFi).
+- In addition to performing forwarding, the device can generalize its services, also performing hop-by-hop reliable data transfer and per-hop congestion control.
 
 
 # 4.5-1 WHAT'S A "MIDDLEBOX"? 
@@ -2161,6 +2176,26 @@ Which of the statements below are true statements regarding  the "end-to-end pri
 - The end-to-end argument advocates placing functionality at the network edge to optimize performance, such as end-end delay.
 - ```The end-to-end argument advocates placing functionality at the network edge because some functionality cannot be completely and correctly implemented in the network, and so needs to be placed at the edge in any case, making in-network implementation redundant.```
 - ```The end-to-end argument allows that some redundant functionality might be placed both in-network and at the network edge in order to enhance performance.```
+
+# 4.5-4 THE INTERNET HOURGLASS.  
+
+What is meant when it is said that the Internet has an “hourglass” architecture? See the picture below if you are unfamiliar with an "hourglass".
+
+![4.5.4](./chapter4photo/4.5.4.jpg)
+
+- ... after matching on the source and destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that source and destination IP address pair.
+- Packets flow from top to bottom down the stack, like sand in an hour glass.  Then, on the receiver side, if the hourglass is reversed,  packets flow up the stack, like sand flowing in the opposite direction.
+- ```The Internet protocol stack has a “thin waist” in the middle, like an hourglass.  The Internet Protocol (IP) is the only network-layer protocol in the middle layer of the stack.  Every other layer has multiple protocols at that layer.```
+
+
+# 4.5-5 FEDERAL REGULATION AND THE INTERNET.  
+
+In the US, which of the following services has been regulated by the Federal Communications Commission (FCC) going back into the 20th century?
+
+- Neither telecommunications services (broadly) nor information services; the FCC's jurisdiction is only on over-the-air (e.g., wireless) links.
+- Both telecommunications services and information services.
+- Information services.
+- ```Telecommunication services.```
 
 
 # 5.1-1 ROUTING VERSUS FORWARDING.
@@ -2378,13 +2413,13 @@ Which of the functions below belong in the controller layer labeled "Network-wid
 ![5.5.2](./chapter5photo/5.5.2.jpg)
 
 - Intent
--  Link-state information
--  Host information
--  Flow tables
--  Switch information
--  OpenFlow protocol
--  Statistics
--  Network graph
+- ```Link-state information```
+- ```Host information```
+- ```Flow tables```
+- ```Switch information```
+- OpenFlow protocol
+- ```Statistics```
+- Network graph
 
 
 # 5.5-4 INTERNAL STRUCTURE OF THE SDN CONTROLLER (3).
@@ -2398,7 +2433,7 @@ Which of the functions below belong in the controller layer labeled "Communicati
 -  Host information
 -  Flow tables
 -  Switch information
--  OpenFlow protocol
+-  ```OpenFlow protocol```
 -  Statistics
 -  Network graph
 
@@ -2413,3 +2448,212 @@ Which of the statements below about ICMP are true?
 - ```The TTL-expired message type in ICMP is used by the traceroute program.```
 - ```ICMP messages are carried directly in IP datagrams rather than as payload in UDP or TCP segments.```
 
+
+# 6.1-1 LINK-LAYER SERVICES.
+
+Which of the following services may be implemented in a link-layer protocol? Select one or more statements.
+
+- ```Multiplexing down from / multiplexing up to a network-layer protocol.```
+- TLS security (including authentication) between directly connected nodes.
+- ```Coordinated access to a shared physical medium.```
+- Lookup and forwarding on the basis of an IP destination address.
+- ```Bit-level error detection and correction.```
+- End-end path determination through multiple IP routers.
+- ```Reliable data transfer between directly connected nodes.```
+- ```Flow control between directly connected nodes.```
+
+
+# 6.2-1 TWO DIMENSIONAL PARITY.
+
+Which of the following statements is true about a two-dimensional parity check (2D-parity) computed over a payload?
+
+- ```2D-parity can detect and correct any case of a single bit flip in the payload.```
+- 2D-parity can detect and correct any case of two bit flips in the payload.
+- ```2D-parity can detect any case of a single bit flip in the payload.```
+- ```2D-parity can detect any case of two bit flips in the payload.```
+
+
+# 6.3-1 CHANNEL PARTITIONING PROTOCOLS.
+
+Which of the following statements is true about channel partitioning protocols?
+
+- Channel partitioning protocol can achieve 100% utilization, in the case that there is only one node that always has frames to send
+- There can be simultaneous transmissions resulting in collisions.
+- ```Channel partitioning protocols can achieve 100% channel utilization, in the case that all nodes always have frames to send.```
+- ```There can be times when the channel is idle, when a node has a frame to send, but is prevented from doing so by the medium access protocol.```
+
+
+# 6.3-2 PURE ALOHA AND CSMA.
+
+Which of the following statements is true about both Pure Aloha, and CSMA (both with and without collision detection?
+
+- ```Pure Aloha and CSMA can achieve 100% utilization, in the case that there is only one node that always has frames to send```
+- There can be times when the channel is idle, when a node has a frame to send, but is prevented from doing so by the med- ium access protocol.
+- ```There can be simultaneous transmissions resulting in collisions```
+- Pure Aloha and CSMA can achieve 100% channel utilization, in the case that all nodes always have frames to send.
+
+
+# 6.3-3 POLLING AND TOKEN-PASSING PROTOCOLS.
+
+Which of the following statements is true about polling and token-passing protocols?
+
+
+- There can be simultaneous transmissions resulting in collisions
+- ```These protocol can achieve close to 100% channel utilization, in the case that all nodes always have frames to send  (the fact that the utilization is close to, but not exactly, 100% is due to a small amount of medium access overhead but not due to collisions)```
+- There can be times when the channel is idle for more than a short period of time, when a node has a frame to send, but is prevented from doing so by the medium access protocol.
+- ```These protocol can achieve close 100% utilization, in the case that there is only one node that always has frames to send  (the fact that the utilization is close to, but not exactly, 100% is due to a small amount of medium access overhead but not due to collisions)```
+
+
+# 6.3-4 CHARACTERISTICS OF MULTIPLE ACCESS PROTOCOLS (A).
+
+Consider the following multiple access protocols that we've studied: (1) TDMA, and FDMA (2) CSMA (3) Aloha, and (4) polling.  Which of these protocols are collision-free (e.g., collisions will never happen)?
+
+- CSMA and CSMA/CD
+- ```Polling```
+- Aloha
+- ```TDMA and FDMA```
+
+
+# 6.3-5 CHARACTERISTICS OF MULTIPLE ACCESS PROTOCOLS (B).
+
+Consider the following multiple access protocols that we've studied: (1) TDMA, and FDMA (2) CSMA (3) Aloha, and (4) polling.  Which of these protocols requires some form of centralized control to mediate channel access?
+
+- ```Polling```
+- CSMA and CSMA/CD
+- ```TDMA and FDMA```
+- Aloha
+
+
+# 6.3-6 CHARACTERISTICS OF MULTIPLE ACCESS PROTOCOLS (C).
+
+Consider the following multiple access protocols that we've studied: (1) TDMA, and FDMA (2) CSMA (3) Aloha, and (4) polling.  For which of these protocols is the maximum channel utilization 1 (or very close to 1)?
+
+- ```Polling```
+- ```TDMA and FDMA```
+- Aloha
+- CSMA and CSMA/CD
+
+
+# 6.3-7 CHARACTERISTICS OF MULTIPLE ACCESS PROTOCOLS (D).
+
+Consider the following multiple access protocols that we've studied: (1) TDMA, and FDMA (2) CSMA (3) Aloha, and (4) polling.  For which of these protocols is there a maximum amount of time that a node knows that it will have to wait until it can successfully gain access to the channel?
+
+- Aloha
+- CSMA and CSMA/CD
+- ```Polling```
+- ```TDMA and FDMA```
+
+
+# 6.4-1 DIFFERENT TYPES OF ADDRESSING (A).
+
+We've now learned about both IPv4 addresses and MAC addresses.  Consider the address properties below, and use the pulldown menu to indicate  which of these properties is only a property of MAC addresses (and therefore is not a property of IPv4 addresses - careful!).
+
+- ```This is a 48-bit address.```
+- This is a network-layer address.
+- This is a 128-bit address.
+- This address must be unique among all hosts in a subnet.
+- This address is allocated by DHCP.
+- ```This is a link-layer address.```
+- ```This address remains the same as a host moves from one network to another.```
+- This is a 32-bit address.
+
+
+# 6.4-2 DIFFERENT TYPES OF ADDRESSING (B).
+
+We've now learned about both IPv4 addresses and MAC addresses.  Consider the address properties below, and use the pulldown menu to indicate  which of these properties is only a property of IPv4 addresses (and therefore is not a property of MAC addresses - careful!).
+
+- This is a link-layer address.
+- ```This is a network-layer address.```
+- This is a 128-bit address.
+- This address remains the same as a host moves from one network to another.
+- ```This address is allocated by DHCP.```
+- ```This is a 32-bit address.```
+- This is a 48-bit address.
+- This address must be unique among all hosts in a subnet.
+
+
+# 6.4-3 DIFFERENT TYPES OF ADDRESSING (C).
+
+We've now learned about both IPv4 addresses and MAC addresses.  Consider the address properties below, and use the pulldown menu to indicate  which of these properties is a property of both IPv4 addresses and MAC addresses.
+
+- This is a network-layer address.
+- This is a 32-bit address.
+- This address remains the same as a host moves from one network to another.
+- This is a 128-bit address.
+- This is a link-layer address.
+- This address is allocated by DHCP.
+- ```This address must be unique among all hosts in a subnet.```
+- This is a 48-bit address.
+
+
+# 6.4-4 FIELDS IN AN ETHERNET FRAME.
+
+Use the pulldown menus below to match the name of the field with the function/purpose of a field within an Ethernet frame.
+
+- Cyclic redundancy check (CRC) field
+    - ```Used to detect and possibly correct bit-level errors in the frame.```
+- Source address field
+    - ```48-bit MAC address of the sending node```
+- Data (payload) field
+    - ```The contents of this field is typically (bit not always) a network-layer IP datagram.```
+- Type field.
+    - ```Used to demultiplex the payload up to a higher level protocol at the receiver.```
+- Sequence number field
+    - ```This field does not exist in the Ethernet frame```
+
+
+# 6.4-5 SWITCH FORWARDING AND FILTERING.
+
+Suppose an Ethernet frame arrives to an Ethernet switch, and the Ethernet switch does not know which of its switch ports leads to the node with the given destination MAC address?  In this case, what does the switch do?
+
+- Choose a port randomly and forward the frame there.
+- Use the address resolution protocol (ARP) to determine the appropriate outgoing port.
+- ```Flood the frame on all ports except the port on which the frame arrived.```
+- Drop the frame without forwarding it.
+
+
+# 6.4-6 SELF-LEARNING SWITCHES.
+
+Which of the following statements are true about a self learning switch?
+
+- ```A self-learning switch will age-out (forget) a self-learned association of a MAC address x and switch port y if it doesn’t see a frame with MAC address x incoming on switch port y after some amount of time.```
+- ```A self learning switch associates the source MAC address on an incoming frame with the port on which it arrived, and stores this matching in a table.  The switch has now learned the port that leads to that MAC address.```
+- ```A self-learning switch frees a network manager from a least one configuration task that might be associated with managing a switch```
+- A self-learning switch never forgets a self-learned association of a MAC address x and switch port y.
+
+
+# 6.4-7 LEARNING SWITCH SCENARIO.
+
+Consider the simple star-connected Ethernet LAN shown below, and suppose the Ethernet switch is a learning switch, and that the switch table is initially empty. Suppose C sends an Ethernet frame address to C' and C ' replies back to C.  How many of these two frames are also received at B's interface?
+
+![6.4.7](./chapter6photo/6.4.7.jpg)
+
+
+- 2
+- 0
+- ```1```
+- 4
+
+
+# 6.4-8 LEARNING SWITCH STATE REMOVAL.
+
+Consider the simple star-connected Ethernet LAN shown below, and suppose the switch table contains entries for each of the 6 hosts.  How will those entries be removed from the switch table?
+
+![6.4.7](./chapter6photo/6.4.7.jpg)
+
+- The table entry can only be removed by the network manager, who would use the SNMP protocol to remove the entry.
+- They'll remain in the switch forever (or until it is re-booted).
+- A table entry for a host will be removed by the STPP (Switch Table Purge Protocol) which will be used by a host to signal the switch when it (the host) is shutting down or otherwise leaving the network.
+- ```An entry for a hostwill be removed if that host doesn't transmit any frames for a certain amount of time (that is, table entries will timeout).```
+
+
+# 6.4-9 MAC ADDRESSES (VERSUS OTHER TYPES OF ADDRESSES AND IDENTIFIERS).
+
+Which of the following statements are true about MAC (link-layer) addresses?  Select one or more statements below.
+
+- Is contained in a SIM card and used when a device identifies itself and connects to an LTE network.
+- ```Generally stays unchanged as a device moves from one network to another.```
+- ```Generally does not change, and is associated with a device when it is manufactured/created.```
+- ```Has 48 bits.```
+- A portion of the address bits are associated with the network to which the device is attached, and so changes as the device moves from one network to another.
+- Has 32 bits.
