@@ -3,10 +3,10 @@
 Which of the following descriptions below correspond to a "nuts-and-bolts" view of the Internet?
 
 - A place I go for information, entertainment, and to communicate with people.
-- ```A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.```
-- ```A collection of billions of computing devices, and packet switches interconnected by links.```
+- ******A collection of hardware and software components executing protocols that define the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event.******
+- ******A collection of billions of computing devices, and packet switches interconnected by links.******
 - A platform for building network applications.
-- ```A "network of networks".```
+- ******A "network of networks".******
 
 
 # 1.1-2 WHAT IS THE INTERNET (2)? 
@@ -398,6 +398,39 @@ Match the networking event with the time frame when the event occurred.
 - The number wireless Internet-connected devices surpasses the number of connected wired devices.
     - ```2010 - 2020```
 
+# 1.8-1 "WHO CONTROLS THE INTERNET?"
+
+Match an organization name below with the role of the organization in Internet governance. To answer this question you’ll need to watch the Chapter 1 supplemental video on “Who Controls the Internet?”.
+
+- Internet Governance Forum (IGF)
+    - ```A multistakeholder deliberation body, convened by the United Nations, that does not make decisions but informs and inspires those who do.```
+- Internet Engineering Task Force (IETF)
+    - ```Sets the technical standards for Internet infrastructure -- particularly protocols, device requirements, and data formats -- in more than 9000 Request for Comments (RFCs).```
+- 3rd Generation Partnership Project (3GPP).
+    - ```Sets the technical standards for 3G, 4G, and 5G mobile cellular system.```
+- Internet Corporation for Assigned Names and Numbers (ICANN)
+    - ```Handles (assigns, adjudicates) Internet names, and manages the root level of the DNS.```
+- Institute for Electrical and Electronics Engineers
+    - ```Sets the technical standard for Ethernet and WiFi link-layer standards.```
+
+
+# 1.8-2 WHAT DOES IT MEAN TO "USE" THE INTERNET?
+
+In 2021, the International Telecommunications Union (ITU) reported that 61.6% of the worlds’s population are “Internet users”.  What does it mean to be an “Internet user” according to the ITU? To answer this question you’ll need to watch the chapter 1 supplemental video on “Who Uses  the Internet?”
+
+- That someone uses the Internet at least once a day, on average.
+- ```That someone has used the Internet at least once in the last three months.```
+- That someone has used the Internet at least once in the last one month
+- That someone uses the Internet at least once a week, on average.
+
+
+# 1.8-2 THE DIGITAL DIVIDE.
+
+Between 2010 and 2018, which of the following digital divides has changed the least in the US? To answer this question you’ll need to watch the chapter 1 supplemental video on “Who Uses  the Internet?” To answer this question you’ll need to watch the chapter 1 supplemental video on “Who Uses  the Internet?”
+
+- The gap in Internet use between rural populations versus urban populations in the US.
+- ```The gap in Internet use between Black and Hispanic populations versus White populations in the US.```
+
 
 # 2.1-1 THE CLIENT-SERVER PARADIGM.
 
@@ -483,7 +516,7 @@ What is the purpose of the conditional HTTP GET request message?
 
 - To allow a server to only send the requested object to the client if the client is authorized to received that object.
 - To allow a server to only send the requested object to the client if the server is not overloaded.
--  ```To allow a server to only send the requested object to the client if this object has changed since the server last sent this object to the client.```
+-  ***To allow a server to only send the requested object to the client if this object has changed since the server last sent this object to the client.***
 - To allow a server to only send the requested object to the client if the client has never requested that object before.
 
 
@@ -1210,8 +1243,8 @@ Consider the purposes/goals/use of different reliable data transfer protocol mec
 - Allows the receiver to eventually receive a packet that was corrupted or lost in an earlier transmission.
     - ```Retransmission```
 
-# 3.4-2 THE RDT 2.0 PROTOCOL.
 
+# 3.4-2 THE RDT 2.0 PROTOCOL.
 
 Consider the rdt 2.0 sender and receiver shown below, with FSM transitions at the sender labeled S1, S2, and S3; and receiver transitions labeled R1 and R2.
 
@@ -1219,30 +1252,16 @@ Which of the following sequences of transitions could possibly occur as a result
 ![](./chapter3photo/3.4.2a.jpg)
 ![](./chapter3photo/3.4.2b.jpg)
 
-
-
 - S1, R1, S2, R1, S3
-
-
 - ```S1, R1, S2```
-
-
 - ```S1, R2, S3```
-
-
 - S1, R1, S3
-
-
 - S1, R2, S2
-
-
 - S1, S2, S3
-
-
 - ```S1, R1, S2, R2,S3```
 
-# 3.4-3 THE RDT 2.1 PROTOCOL (A).
 
+# 3.4-3 THE RDT 2.1 PROTOCOL (A).
 
 Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
 
@@ -1262,10 +1281,10 @@ S1, x1, x2, S4, x3, x4
 - transition x4
     - ```S6```
 
+
 # 3.4-4 THE RDT 2.1 PROTOCOL (B).
 
-
- Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
+Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
 
 ![](./chapter3photo/3.4.3.jpg)
 
@@ -1284,8 +1303,8 @@ S1 (message corrupted), x1, x2, x3, x4, S4, x5, S6.
 - transition x5
     - ```R4```
 
-# 3.4-5 THE RDT 2.1 PROTOCOL (C).
 
+# 3.4-5 THE RDT 2.1 PROTOCOL (C).
 
  Consider the rdt2.1 sender and receiver FSMs shown below, with labeled transitions S1 through S6 at the sender, and transitions R1 through R6 at the receiver. The sender and receiver start in the “Wait for call 0 from above” and “Wait for 0 from below” states, respectively.
 
@@ -1296,180 +1315,118 @@ Suppose that the first packet from the sender is correctly received at the recei
 S1, x1 (ACK corrupted), x2, x3, x4, S4, x5, S6.
 
 - transition x1
-
+    - ```R1```
 - transition x2
-
+    - ```S2```
 - transition x3
-
+    - ```R3```
 - transition x4
-
+    - ```S3```
 - transition x5
-
+    - ```R4```
 
 # 3.4-6 CUMULATIVE ACK.
 
-
 What is meant by a cumulative acknowledgment, ACK(n)?
 
-
 - A cumulative ACK(n) allows the receiver to let the sender know that it has not yet received an ACK for packet with sequence number n.
-
-
 - ```A cumulative ACK(n) acks all packets with a sequence number up to and including n as being received.```
-
-
 - A cumulative ACK(n) allows the receiver to let the sender know that it has not received any packets with a new sequence number since the last cumulative ACK(n) was sent.
+
 
 # 3.4-7 STOP-AND-WAIT: CHANNEL UTILIZATION.
 
-
 Suppose a packet is 10K bits long, the channel transmission rate connecting a sender and receiver is 10 Mbps, and the round-trip propagation delay is 10 ms.  What is the maximum channel utilization of a stop-and-wait protocol for this channel?
 
-
 - 1.0
-
-
 - .001
-
-
 - 10.0
-
-
 - .01
-
-
 - ```.1```
+
 
 # 3.4-8 CHANNEL UTILIZATION WITH PIPELINING.
 
-
 Suppose a packet is 10K bits long, the channel transmission rate connecting a sender and receiver is 10 Mbps, and the round-trip propagation delay is 10 ms.  What is the channel utilization of a pipelined protocol with an arbitrarily high level of pipelining for this channel?
 
-
 - ```1.0```
-
-
 - 0.01
-
-
 - 10.0
-
-
 - 0.001
-
-
 - 0.1
+
 
 # 3.4-9 CHANNEL UTILIZATION WITH PIPELINING (MORE).
 
-
 Suppose a packet is 10K bits long, the channel transmission rate connecting a sender and receiver is 10 Mbps, and the round-trip propagation delay is 10 ms.  How many packets can the sender transmit before it starts receiving acknowledgments back?
 
-
 - 1000
-
-
 - 1
-
-
 - 100
-
-
 - 10,000
-
-
 - ```10```
+
 
 # 3.4-10 PIPELINING.
 
-
 Which of the following statements about pipelining are true?  One or more statements may be true.
 
-
 - With pipelining, a packet is only retransmitted if that packet, or its ACK, has been lost.
-
-
 - ``With a pipelined sender, there may be transmitted packets “in flight” – propagating through the channel – packets that the sender has sent but that the receiver has not yet received.``
-
-
 - ``A pipelined sender can have transmitted multiple packets for which the sender has yet to receive an ACK from the receiver. ``
-
-
 - With pipelining, a receiver will have to send fewer acknowledgments as the degree of pipelining increases
+
 
 # 3.4-11 PACKET BUFFERING IN GO-BACK-N.
 
-
 What are some reasons for discarding received-but- out-of-sequence packets at the receiver in GBN? Indicate one or more of the following statements that are correct.
-
 
 - Discarding an out of sequence packet will really force the sender to retransmit.
 
-
 - ```The sender will resend that packet in any case.```
-
-
-
-
 - If some packets are in error, then its likely that other packets are in error as well.
-
-
 - ```The implementation at the receiver is simpler.```
+
 
 # 3.4-12 PACKET BUFFERING IN GO-BACK-N (MORE).
 
-
 What are some reasons for not discarding received-but- out-of-sequence packets at the receiver in GBN? Indicate one or more of the following statements that are correct.
 
-
 - ```Even though that packet will be retransmitted, its next retransmission could be corrupted, so don’t discard a perfectly well-received packet, silly!```
-
-
 - By not discarding, the receiver can implicitly let the sender know that it (the sender) does not necessarily have to retransmit that packet.
-
-
 - Complex protocols are always better
 
-# 3.4-13 RECEIVER OPERATION IN SELECTIVE REPEAT.
 
+# 3.4-13 RECEIVER OPERATION IN SELECTIVE REPEAT.
 
 In the SR receiver window (see diagram below, taken from PPT slides and video), why haven’t the red packets been delivered yet? Check the one or more reasons below that apply.
 
 ![](./chapter3photo/3.4.13.jpg)
 
 - Red packets have a lower delivery priority up to the application.
-
 - ```There is a packet with a lower sequence number than any of the red packets that has yet to be received, so in-order delivery of data in the red packets up to the application layer is not possible.```
-
 - There is a packet with a higher sequence number than any of the red packets that has yet to be received, so in-order delivery of data in the red packets to the application layer is not yet possible.
 
-# 3.4-14 RECEIVER OPERATION IN SELECTIVE REPEAT (MORE).
 
+# 3.4-14 RECEIVER OPERATION IN SELECTIVE REPEAT (MORE).
 
 In SR, why does the receiver have to acknowledge packets with sequence numbers that are less than (and to the left of) those in its window, which starts at rcv_base.
 ![](./chapter3photo/3.4.13.jpg)
 
 - Actually, this ACK retransmission can be ignored and the protocol will still function correctly, but its performance won’t be as good.
-
-
 - ```Because the sender may not have received an ACK for that packet yet.```
-
-
 - Because, at the time of the data packet arrival at the receiver, the sender has definitely still not received an ACK for that packet.
+
 
 # 3.5-1 TCP RELIABILITY SEMANTICS.
 
-
 True or False:  On the sending side, the TCP sender will take each application-layer chunk of data written into a TCP socket and send it in a distinct TCP segment. And then on the receiving side, TCP will deliver a segment’s payload into the appropriate socket, preserving the application-defined message boundary.
 
-
 - True.
-
-
 - ```False.```
 
-# 3.5-2 TCP SEGMENT FORMAT.
 
+# 3.5-2 TCP SEGMENT FORMAT.
 
 For the given function of a field in the TCP segment, select the name of that field from the pull-down list.
 
@@ -1492,18 +1449,15 @@ For the given function of a field in the TCP segment, select the name of that fi
 
 # 3.5-3 TCP SEQUENCE NUMBERS AND ACKS (1).
 
-
 Consider the TCP Telnet scenario below (from Fig. 3.31 in text). Why is it that the receiver sends an ACK that is one larger than the sequence number in the received datagram?
 
 ![](./chapter3photo/3.5.3.jpg)
 
 - ```Because the send-to receiver segment carries only one byte of data, and after that segment is received, the next expected byte of data is just the next byte (i.e., has an index that is one larger) in the data stream.```
-
-
 - Because TCP sequence numbers always increase by 1, with every new segment, and the TCP receiver always send the sequence number of the next expected segment
 
-# 3.5-4 TCP SEQUENCE NUMBERS AND ACKS (2).
 
+# 3.5-4 TCP SEQUENCE NUMBERS AND ACKS (2).
 
 Suppose that as shown in the figure below, a TCP sender is sending segments with 100 bytes of payload.  The TCP sender sends five segments with sequence numbers 100, 200, 300, 400, and 500.  Suppose that the segment with sequence number 300 is lost.  The TCP receiver will buffer correctly-received but not-yet-in-order segments for later delivery to the application layer (once missing segments are later received).
 
@@ -1522,8 +1476,8 @@ Complete the sentences below ....
 - The TCP receiver does not respond in the example, with an ACK with value:
     - ```400```
 
-# 3.5-5 TCP RTT ESTIMATION: EWMA.
 
+# 3.5-5 TCP RTT ESTIMATION: EWMA.
 
 Consider TCP use of an exponentially weighted moving average (EWMA) to compute the nth value of the estimated RTT:
 
@@ -1531,41 +1485,30 @@ EstimatedRTTn = (1- a)*EstimatedRTTn-1 + a*SampleRTTn
 
 True or False: with this EWMA algorithm the value of EstimatedRTTn  has no dependence on the earlier sample, SampleRTTn-1 
 
-
 - True
-
-
 - ```False```
 
-# 3.5-6 TCP TIMER MANAGEMENT.
 
+# 3.5-6 TCP TIMER MANAGEMENT.
 
 Consider the TCP Telnet scenario below (from Fig. 3.36 in text). What timer-related action does the sender take on the receipt of ACK 120?
 
 ![](./chapter3photo/3.5.6.jpg)
 
 - ```Cancels any running timers.```
-
-
 - Leaves any currently-running timers running.
-
-
 - Restarts a timer for the segment with sequence number 92.
+
 
 # 3.5-7 TCP FLOW CONTROL.
 
-
 True or False:  with TCP’s flow control mechanism, where the receiver tells the sender how much free buffer space it has (and the sender always limits the amount of outstanding, unACKed, in-flight data to less than this amount), it is not possible for the sender to send more data than the receiver has room to buffer.
 
-
 - ```True```
-
-
 - False
 
 
 # 3.5-8 TCP CONNECTION MANAGEMENT.
-
 
 Match the description of a TCP connection management message with the name of the message used to accomplish that function.
 
@@ -1580,8 +1523,8 @@ Match the description of a TCP connection management message with the name of th
 - A general purpose error message used during connection set up or tear down to let the other side know that an error has occurred, and that the referenced connection should be shut down.
     - ```RESET message```
 
-# 3.5-9 TCP FAST RETRANSMIT.
 
+# 3.5-9 TCP FAST RETRANSMIT.
 
 Consider TCP’s Fast Retransmit optimization (see Figure 3.37 from the text, below).  Of course, the sender doesn't know for sure that the segment with sequence # 100 is actually lost (it can’t see into the channel). Can a sender get three duplicate ACKs for a segment that in fact has not been lost? Which of the following statements are true?  Suppose a channel can lose, but will not corrupt, messages.
 
@@ -1590,33 +1533,23 @@ Consider TCP’s Fast Retransmit optimization (see Figure 3.37 from the text, be
         Both of them is the answer
 
 - ```If the channel cannot reorder messages, a triple duplicate ACK indicates to the sender that a segment loss has happened for sure. Actually (again assuming the channel cannot corrupt or reorder messages), even a single duplicate ACK would indicate that a segment loss has happed for sure.```
-
-
 - ```If the channel can reorder messages, a triple duplicate ACK can occur even though a message is not lost; since it's possible that a message has just been reordered and has not yet arrived when the three duplicate ACKs were generated.```
 
-# 3.6-1 CONGESTION CONTROL VERSUS FLOW CONTROL.
 
+# 3.6-1 CONGESTION CONTROL VERSUS FLOW CONTROL.
 
 Consider the five images below.  Indicate which of these images suggest the need for flow control (the others would suggest the need for congestion control).
 
 ![](./chapter3photo/3.6.1.jpg)
 
 - ```A glass overflowing```
-
-
 - ```A talking head```
-
-
 - A penguin crowd
-
-
 - A crowd of people
-
-
 - Car traffic
 
-# 3.6-2 TWO CONGESTED SENDERS.
 
+# 3.6-2 TWO CONGESTED SENDERS.
 
 Consider the figure below, which shows the application-to-application throughput achieved when two senders are competing at a shared bottleneck link.  Suppose that when the overall arrival rate,  lambdain' (for each sender) is close to R/2, the throughput to the application layer (at each receiver), lambdaout, is equal to 0.8 *  lambdain'.
 
@@ -1625,71 +1558,38 @@ Consider the figure below, which shows the application-to-application throughput
 What fraction of the packets transmitted at the sender are retransmissions?
 
 - ```.20```
-
-
 - .80
-
-
 - .50
-
-
 - 0
 
 
 # 3.6-3 NETWORK-ASSISTED OR END-END CONGESTION CONTROL?
 
-
 Which of the following actions are used in network-assisted congestion control (say versus end-end congestion control) to signal congestion. Check all that apply.
 
-
 - ```A router marks a field in the datagram header at a congested router.```
-
-
 - ```A router sends an ICMP message to a host telling it to slow down its sending rate.```
-
-
 - The transport-layer receiver informs sender of the size of its (transport-payer receiver) receive window.
-
-
 - A router drops a packet at a congested router.
-
-
 - The sender decreases its sending rate in response to a measured increase in the RTT.
-
-
 - A datagram experiences delay at a congested network router, which is then measured by the sender and used to decrease the sending rate.
-
-
 - A sender decreases its sending rate in response to packet loss detected via its transport-layer ACKing.
+
 
 # 3.6-4 NETWORK-ASSISTED OR END-END CONGESTION CONTROL (2)?
 
-
 Which of the following actions are associated with end-end congestion control (say versus network-assisted congestion control). Check all that apply.
 
-
 - ```A sender decreases its sending rate in response to packet loss detected via its transport-layer ACKing.```
-
-
 - ```The transport-layer sender decreases its sending rate in response to a measured increase in the RTT.```
-
-
 - ```A router drops a packet at a congested router, which causes the transport-layer sender to infer that there is congestion due to the missing ACK for the lost packet.```
-
-
 - ```A datagram experiences delay at a congested network router, which is then measured by the sender and used to decrease the sending rate.```
-
-
 - The transport-layer receiver informs sender of the size of its (transport-payer receiver) receive window.
-
-
 - A router marks a field in the datagram header at a congested router.
-
-
 - A router sends an ICMP message to a host telling it to slow down its sending rate.
 
-# 3.6-5 DIFFERENT APPROACHES TOWARDS CONGESTION CONTROL.
 
+# 3.6-5 DIFFERENT APPROACHES TOWARDS CONGESTION CONTROL.
 
 Use the pulldown menu to match a congestion control approach to how the sender detects congestion.
 
@@ -1700,87 +1600,56 @@ Use the pulldown menu to match a congestion control approach to how the sender d
 - The sender measures RTTs and uses the current RTT measurement to infer the level of congestion.
     - ```delay-based```
 
-# 3.7-1 TCP’S AIMD ALGORITHM.
 
+# 3.7-1 TCP’S AIMD ALGORITHM.
 
 Which of the following statements about TCP’s Additive-increase-multiplicative-decrease (AIMD) algorithm are true?  Check all that are true.
 
-
 - AIMD always cuts the congestion window size, cwnd, in half whenever loss is detected.
-
-
 - ```AIMD cuts the congestion window size, cwnd, in half whenever loss is detected by a triple duplicate ACK.```
-
-
 - AIMD uses observed packet loss to detect congestion.
-
-
 - ```AIMD is a end-end approach to congestion control.```
-
-
 - AIMD is a network-assisted approach to congestion control.
-
-
 - AIMD uses the measured RTT delay to detect congestion.
-
-
 - ```AIMD cuts the congestion window size,cwnd, i  to 1 whenever a timeout occurs.```
+
 
 # 3.7-2 TCP’S AIMD ALGORITHM (2).
 
-
 How is the sending rate typically regulated in a TCP implementation?
 
-
 - By using the retransmission timeout timer and counting the number of bytes sent since the last timeout to compute the sending rate since that last timeout,  and then making sure its sending rate never exceed the rate set by AIMD.
-
-
 - ```By keeping a window of size cwnd over the sequence number space, and making sure that no more than cwnd bytes of data are outstanding (i.e, unACKnowledged).  The size of cwnd is regulated by AIMD.```
+
 
 # 3.7-3 TCP’S SLOWSTART ALGORITHM.
 
-
-  Which of the following best completes this sentence: "In the absence of loss, TCP slow start increases the sending rate ... "
-
+Which of the following best completes this sentence: "In the absence of loss, TCP slow start increases the sending rate ... "
 
 - ... slower than AIMD, that’s why it’s called Slowstart."
-
-
 - ```" ... faster than AIMD.  In fact, slowstart increases the sending rate exponentially fast per RTT."```
-
-
 - "... at the same rate as AIMD."
+
 
 # 3.7-4 UNCONTROLLED TRANSPORT-LAYER SENDERS.
 
-
 Consider the transport-layer flows interacting at a congested link.  In the face of such congestion, what happens at this link to a transport-layer flow that does not cut back on its sending rate?
 
-
 - The router will send a signal to the TCP sender that would force the TCP sender to cut its rate in half.
-
-
 - ```Nothing different from the other flows crossing the congested link.```
-
-
 - That sender’s datagrams will be preferentially dropped at the congested link.
+
 
 # 3.7-5 TCP CUBIC.
 
-
 Assuming that the congestion window size,cwnd, has not yet reached Wmax, TCP CUBIC will ... (check all that apply)
 
-
-
 - ```... always have a window size, cwnd, and hence a sending rate, higher than that of AIMD (assuming a given window size, Wmax, at which loss would occur).```
-
 - ... have a sending rate that always increases faster than that of AIMD.
-
 - ```... increase its sending rate faster than AIMD when cwnd is  far away from Wmax, but increase slower than AIMD when cwnd is closer to Wmax```
 
 
 # 3.7-6 DELAY-BASED CONGESTION CONTROL. 
-
 
 For delay-based congestion control, match the sender action to the relationship  of the currently measured throughput to the value of cwnd/RTTmin
 
@@ -1791,124 +1660,80 @@ For delay-based congestion control, match the sender action to the relationship 
 - The currently measured throughput is much less that than cwnd/RTTmin
     - ```decrease the sending rate```
 
-# 3.8-1 QUIC STREAMS.
 
+# 3.8-1 QUIC STREAMS.
 
 What are advantages of the streams concept in QUIC? Select all that apply.
 
-
 - With N streams, the overall throughput can be increased by a factor of N, since each stream has its own separate congestion control.
-
-
 - ```Since each stream has its own error control, if one stream experiences an error (e.g., lost or damaged segment), the other streams are unaffected.```
-
-
 - ```Streams allow concurrent retrieval of web objects, while avoiding Head of the Line (HOL) blocking.```
+
 
 # 3.8-2 QUIC: AN APPLICATION-LAYER PROTOCOL.
 
-
 What are advantages of implementing transport-layer functionality in QUIC at the application layer? Select all that apply.
 
-
 - ```As an application-layer protocol, QUIC can be updated/modified at “app frequency” rather than at the frequency of operating system updates.```
-
-
 - QUIC performs both congestion control and error recovery different from TCP, leveraging all of the knowledge that has built up since TCP was first standardized, and therefore has better performance than TCP.
-
-
 - QUIC’s performance can be better optimized at the application-layer, so it will have better performance than if these functions were implremented in the operating system.
-
-
 - ```QUIC can establish all connection parameters (security, reliability, flow and congestion control)in just one handshake rather than separately in two.```
+
 
 # 4.1-1 THE NETWORK LAYER - WHERE IS IT?
 
 Check all of the statements below about where (in the network) the network layer is implemented that are true.
 
 - The network layer is implemented in wired Internet-connected devices but not wireless Internet-connected devices.
-
-
 - ```The network layer is implemented in routers in the network core.```
-
-
 - The network layer is implemented in Ethernet switches in a local area network.
-
-
 - ```The network layer is implemented in hosts at the network's edge.```
+
 
 # 4.1-2 FORWARDING VERSUS ROUTING.
 
 Consider the travel analogy discussed in the textbook - some actions we take on a trip correspond to forwarding and other actions we take on a trip correspond to routing.  Which of the following travel actions below correspond to forwarding? The other travel actions that you don't select below then correspond to routing.  
 
 - A climber decides to take the South Col Route to the top of Mt Everest rather than the Northeast Ridge route.
-
-
 - A traveler decides to fly to Sydney through Singapore rather that Dubai.
-
-
 - ```A car takes the 3rd exit from a roundabout.```
-
-
 - A car takes highway 80 between New York and Chicago, rather than highway 87 to Albany and from there take Interstate 90 to Chicago.
-
-
 - ```A car stops at an intersection to “gas-up” and take a “bathroom break”```
-
-
 - ```A car waits at light and then turns left at the intersection.```
+
 
 # 4.1-3 THE CONTROL PLANE VERSUS THE DATA PLANE.
 
 For each of the actions below, select those actions below that are primarily in the network-layer data plane. The other actions that you don't select below then correspond to control-plane actions. 
 
 - ```Moving an arriving datagram from a router’s input port to output port```
-
-
 - Monitoring and managing the configuration and performance of an network device.
-
-
 - Computing the contents of the forwarding table.
-
-
 - ```Dropping a datagram due to a congested (full) output buffer.```
-
-
 - ```Looking up address bits in an arriving datagram header in the forwarding table.```
+
 
 # 4.1-4 WHAT TYPE OF CONTROL PLANE?
 
 We've seen that there are two approaches towards implementing the network control plane - a per-router control-plane approach and a software-defined networking (SDN) control-plane approach.  Which of the following actions occur in a per-router control-plane approach? The other actions that you don't select below then correspond to actions in an SDN control plane.  
 
 - ```A router exchanges messages with another router, indicating the cost for it (the sending router) to reach a destination host.```
-
-
 - ```Routers send information about their incoming and outgoing links to other routers in the network.```
-
-
 - All routers in the network send information about their incoming and outgoing links to a logically centralized controller.
-
-
 - A control agent in router receives a complete forwarding table, which it installs and
 uses to locally control datagram forwarding.
+
 
 # 4.1-5 BEST EFFORT SERVICE.
 
 Which of the following quality-of-service guarantees are part of the Internet’s best-effort service model? Check all that apply.
 
 - Guaranteed delivery time from sending host to receiving host.
-
-
 - ```None of the other services listed here are part of the best-effort service model. Evidently, best-effort service really means no guarantees at all!```
-
-
 - Guaranteed delivery from sending host to receiving host.
-
-
 - A guaranteed minimum bandwidth is provided to a source-to-destination flow of packets
-
-
 - In-order datagram payload delivery to the transport layer of those datagrams arriving to the receiving host
+
 
 # 4.2-1 WHAT'S INSIDE A ROUTER?
 
@@ -1930,30 +1755,20 @@ Match the names of the principal router components (A,B,C,D below) with their fu
 Where in a router is the destination IP address looked up in a forwarding table to determine the appropriate output port to which the datagram should be directed?
 
 - Within the routing processor.
-
-
 - Within the switching fabric.
-
-
 - ```At the input port where a packet arrives.```
-
-
 - At the output port leading to the next hop towards the destination.
+
 
 # 4.2-3 WHERE DOES "MATCH+ACTION" HAPPEN?
 
 Where in a router does "match plus action" happen to determine the appropriate output port to which the arriving datagram should be directed?
 
 - Within the routing processor.
-
-
 - Within the switching fabric.
-
-
 - At the output port leading to the next hop towards the destination.
-
-
 - ```At the input port where a packet arrives.```
+
 
 # 4.2-4 LONGEST PREFIX MATCHING.
 
@@ -1981,32 +1796,25 @@ Note:
 - 11001000 00010111 00011101 01101101
     - ```This is the second destination address in the list that maps to output port 2. ```
 
+
 # 4.2-5 PACKET DROPPING.
 
 Suppose a datagram is switched through the switching fabric and arrives to its appropriate output to find that there are no free buffers.  In this case:
 
 - The packet will be sent back to the input port.
-
-
 - The packet will be dropped (lost).
-
-
 - ```The packet will either be dropped or another packet will be removed (lost) from the buffer to make room for this packet, depending on policy.  But the packet will definitely not be be sent back to the input port.```
-
-
 - Another packet will be removed (lost) from the buffer to make room for this packet.
+
 
 # 4.2-6 HOL BLOCKING.
 
 What is meant by Head of the Line (HOL) blocking?
 
 - ```A queued datagram waiting for service at the front of a queue prevents other datagrams in queue from moving forward in the queue.```
-
-
 - In a block error code, the first bytes of the code indicate the type of coding being used.
-
-
 - A queued datagram receiving service at the front of a queue prevents other datagrams in queue from receiving service.
+
 
 # 4.2-7 SCHEDULING.
 
@@ -2022,6 +1830,7 @@ Note:
 
 - ``` 1 2 3 4 5 6 7 ```
 
+
 # 4.2-8 SCHEDULING.
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under priority scheduling, where red packets have higher priority.
@@ -2035,6 +1844,7 @@ Note:
 ```
 
 - ``` 1 2 3 5 4 7 6 ```
+
 
 # 4.2-9 SCHEDULING.
 
@@ -2050,6 +1860,7 @@ Note:
 
 - ``` 1 3 2 4 5 7 6 ```
 
+
 # 4.2-10 PACKET SCHEDULING.
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under FCFS scheduling. Give your answer as 7 ordered digits (each corresponding to the packet number of a departing packet), with a single space between each digit, and no spaces before the first or after the last digit, e.g., in a form like 7 6 5 4 3 2 1).
@@ -2057,6 +1868,7 @@ Consider the pattern of red and green packet arrivals to a router’s output por
 ![4.2.10](./chapter4photo/4.2.10.png)
 
 - ``` 1 2 3 4 5 6 7 ```
+
 
 # 4.2-11 PACKET SCHEDULING.
 
@@ -2067,6 +1879,7 @@ Give your answer as 7 ordered digits (each corresponding to the packet number of
 
 - ``` 1 2 4 3 5 6 7 ```
 
+
 # 4.2-12 PACKET SCHEDULING.
 
 Consider the pattern of red and green packet arrivals to a router’s output port queue, shown below. Suppose each packet takes one time slot to be transmitted, and can only begin transmission at the beginning of a time slot after its arrival.  Indicate the sequence of departing packet numbers (at t = 1, 2, 3, 4, 5, 7, 8) under round robin scheduling, where red starts a round if there are both red and green packets ready to transmit after an empty slot.
@@ -2076,26 +1889,18 @@ Give your answer as 7 ordered digits (each corresponding to the packet number of
 
 - ``` 1 2 4 3 5 6 7 ```
 
+
 # 4.3-1 WHAT IS THE INTERNET PROTOCOL?
 
 What are the principal components of the IPv4 protocol (check all that apply)?
 
 - Routing algorithms and protocols like OSPF and BGP.
-
-
 - ```IPv4 datagram format.```
-
-
 - ICMP (Internet Control Message Protocol)
-
-
 - SDN controller protocols.
-
-
 - ```Packet handling conventions at routers (e.g., segmentation/reassembly)```
-
-
 - ```IPv4 addressing conventions```
+
 
 # 4.3-2 THE IPV4 HEADER.
 
@@ -2118,35 +1923,26 @@ Match each of the following fields in the IP header with its description, functi
 - Datagram length field.
     - ``` This field indicates the total number of bytes in datagram. ```
 
+
 # 4.3-3 WHAT IS AN IP ADDRESS ACTUALLY ASSOCIATED WITH?
 
 Which of the following statements is true regarding an IP address? (Zero, one or more of the following statements is true).
 
 - It is not necessary for a device using the IP protocol to actually have an IP address associated with it.
-
-
 - ```If a router has more than one interface, then it has more that one IP address at which it can be reached.```
-
-
 - ```An IP address is associated with an interface.```
-
-
 - ```If a host has more than one interface, then it has more that one IP address at which it can be reached```
+
 
 # 4.3-4 WHAT IS A SUBNET?
 
 What is meant by an IP subnet? (Check zero, one or more of the following characteristics of an IP subnet).
 
 - A set of devices that always have a common first 16 bits in their IP address.
-
-
 - ```A set of devices that have a common set of leading high order bits in their IP address.```
-
-
 - A set of devices all manufactured by the same equipment maker/vendor.
-
-
 - ```A set of device interfaces that can physically reach each other without passing through an intervening router.```
+
 
 # 4.3-5 SUBNETTING.
 
@@ -2157,18 +1953,11 @@ Consider the three subnets in the diagram below.
 What is the maximum # of interfaces in the 223.1.2/24 network?
 
 - 128
-
-
 - 2**32
-
-
 - Two hosts, as shown in the figure.
-
-
 - ```256```
-
-
 - There's no a priori limit on the number of interfaces in this subnet.
+
 
 # 4.3-6 SUBNETTING.
 
@@ -2179,18 +1968,11 @@ Consider the three subnets in the diagram below.
 What is the maximum # of interfaces in the 223.1.3/29 network?
 
 - Three hosts, as shown in the figure.
-
-
 - There's no a priori limit on the number of interfaces in this subnet.
-
-
 - ```8```
-
-
 - 2**32
-
-
 - 128
+
 
 # 4.3-7 SUBNETTING.
 
@@ -2201,79 +1983,45 @@ Consider the three subnets in the diagram below.
 Which of the following addresses can not be used by an interface in the 223.1.3/29 network? Check all that apply.
 
 - ```223.1.2.6```
-
-
 - 223.1.3.6
-
-
 - 223.1.3.2
-
-
 - ```223.1.3.16```
-
-
 - ```223.1.3.28```
+
 
 # 4.3-8 PLUG-AND-PLAY.
 
 What is meant by saying that DHCP is a "plug and play" protocol?
 
 - ```No manual configuration is needed for the host to join the network.```
-
-
 - The host needs to “plug” (by wire or wirelessly) into the local network in order to access (“play” in) the Internet
-
-
 - The network provides an Ethernet jack for a host’s Ethernet adapter.
+
 
 # 4.3-9 DHCP REQUEST MESSAGE.
 
 Which of the following statements about a DHCP request message are true (check all that are true). Hint: check out Figure 4.24 in the 7th and 8th edition of our textbook.
 
 - ```The transaction ID in a DHCP request message will be used to associate this message with future DHCP messages sent from, or to, this client.```
-
-
 - ```A DHCP request message may contain the IP address that the client will use.```
-
-
 - The transaction ID in a DCHP request message is used to associate this message with previous messages sent by this client.
-
-
 - ```A DHCP request message is sent broadcast, using the 255.255.255.255 IP destination address.```
-
-
 - A DHCP request message is sent from a DHCP server to a DHCP client.
-
-
 - A DHCP request message is optional in the DHCP protocol.
+
 
 # 4.3-10 IPV4 VERSUS IPV6. 
 
 Which of the following fields occur ONLY in the IPv6 datagram header (i.e., appear in the IPv6 header but not in the IPv4 header)?  Check all that apply.
 
 - The time-to-live (or hop limit) field.
-
-
 - The header length field.
-
-
 - The options field.
-
-
 - ```The flow label field.```
-
-
 - ```128-bit source and destination IP addresses.```
-
-
 - The header checksum field.
-
-
 - The IP version number field.
-
-
 - The upper layer protocol (or next header) field.
-
 
 
 # 4.3-11 PURPOSE OF DHCP. 
@@ -2281,15 +2029,10 @@ Which of the following fields occur ONLY in the IPv6 datagram header (i.e., appe
 What is the purpose of the Dynamic Host Configuration Protocol?
 
 - ```To obtain an IP address for a host attaching to an IP network.```
-
-
 - To configure the interface speed to be used, for hardware like Ethernet, which can be used at different speeds.
-
-
 - To get the 48-bit link-layer MAC address associated with a network-layer IP address.
-
-
 - To configure the set of available open ports (and hence well-known services) for a server.
+
 
 # 4.4-1 DESTINATION-BASED MATCH+ACTION.
 
@@ -2297,55 +2040,32 @@ Destination-based forwarding, which we studied in section 4.2, is a specific ins
 "In destination-based forwarding, ..."
 
 - ... after matching on the source and destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that source and destination IP address pair.
-
-
 -  ... after matching on the port number in the segment's header, the action taken is to decide whether or not to drop the datagram containing that segment.
-
-
 - ``` ... after matching on the destination IP address in the datagram header, the action taken is to forward the datagram to the output port associated with that destination IP address.```
-
-
 - ... after matching on the port number in the segment's header, the action taken is to forward the datagram to the output port associated with that port number.
-
-
 - ... after matching on the 48-bit link-layer destination MAC address, the action taken is to forward the datagram to the output port associated with that link-layer address.
-
-
 -  ... after matching on the destination IP address in the datagram header, the action taken is to decide whether or not to drop that datagram.
-
-
 - ... after matching on the URL contained in an HTTP GET request in the TCP segment within the IP datagram, the action taken is to determine the IP address of the server associated with that URL, and to forward the datagram to the output port associated with that destination IP address.
+
 
 # 4.4-2 GENERALIZED MATCH+ACTION.
 
 Which of the following match+actions can be taken in the generalized OpenFlow 1.0 match+action paradigm that we studied in Section 4.4?  Check all that apply.
+
 
 # 4.4-3 WHAT FIELDS CAN BE MATCHED IN GENERALIZED MATCH+ACTION.
 
 Which of the following fields in the frame/datagram/segment/application-layer message can be matched in OpenFlow 1.0? Check all that apply.
 
 - ```IP destination address```
-
-
 - URL in HTTP message
-
-
 - ```IP source address```
-
-
 - ```IP type-of-service field```
-
-
 - ```Upper layer protocol field```
-
-
 - ```Source and/or destination port number```
-
-
 - Number of bytes in the datagram
-
-
 - Time-to-live field
+
 
 # 4.4-4 MATCH+ACTION IN OPENFLOW 1.0.
 
@@ -2366,8 +2086,8 @@ Consider the figure below that shows the generalized forwarding table in a route
 - Source: 10.1.34.56 Destination: 54.72.29.90
     - ```No match to any rule.```
 
-# 4.4-5 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES.
 
+# 4.4-5 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES.
 
 Consider the network below.  We want to specify the match+action rules at s3 so that only the following network-wide behavior is allowed:
 traffic from 128.119/16 and destined to 137.220/16 is forwarded on the direct link from s3 to s1;
@@ -2401,6 +2121,7 @@ From the list of match+action rules below, select the rules to include in s3's f
 
 - Input port: 3; Dest: 137.220/16     Action: forward(2)
 
+
 # 4.4-6 CRAFTING NETWORK-WIDE FORWARDING USING FLOW TABLES (MORE).
 
 Consider the network below.  We want to specify the match+action rules at s3 so that s3 acts only as a relay for traffic between 137.220/16 and 67.56/16.  In particular s3 should not accept/forward and traffic to/from 128.119/16.
@@ -2414,81 +2135,47 @@ From the list of match+action rules below, select the rules to include in s3's f
 Which of the following network devices can be thought of as a "middlebox"? Check all that apply.
 
 - SDN controller
-
 - IP router
-
-
 - WiFi base station
-
-
 - ```Network Address Translation box```
-
-
 - ```HTTP load balancer```
-
-
 - ```HTTP cache```
+
 
 # 4.5-2 THE "THIN WAIST" OF THE INTERNET.
 
 What protocol (or protocols) constitutes the "thin waist" of the Internet protocol stack? Check all that apply.
 
 - ```IP```
-
-
 - HTTP
-
-
 - TCP
-
-
 - DNS
-
-
 - WiFi
-
-
 - Ethernet
+
 
 # 4.5-3 THE END-TO-END PRINCIPLE.
 
 Which of the statements below are true statements regarding  the "end-to-end principle"? Check all that apply.
 
 - The end-to-end argument advocates placing functionality at the network edge to optimize performance, such as end-end delay.
-
-
 - ```The end-to-end argument advocates placing functionality at the network edge because some functionality cannot be completely and correctly implemented in the network, and so needs to be placed at the edge in any case, making in-network implementation redundant.```
-
-
 - ```The end-to-end argument allows that some redundant functionality might be placed both in-network and at the network edge in order to enhance performance.```
+
 
 # 5.1-1 ROUTING VERSUS FORWARDING.
 
-  Which of the following statements correctly identify the differences between routing and forwarding. Select one or more statements.
-
-  
+Which of the following statements correctly identify the differences between routing and forwarding. Select one or more statements.
+ 
 - ```Forwarding refers to moving packets from a router’s input to appropriate router output, and is implemented in the data plane.    ```
-
-
 - Forwarding refers to determining the route taken by packets from source to destination, and is implemented in the control plane.  
-
-
 - Routing refers to determining the route taken by packets from source to destination, and is implemented in the data plane.  
-
-
 - Routing refers to moving packets from a router’s input to appropriate router output, and is implemented in the control plane.  
-
-
 - ```Routing refers to determining the route taken by packets from source to destination, and is implemented in the control plane.  ```
-
-
 - Forwarding refers to moving packets from a router’s input to appropriate router output, and is implemented in the control plane.  
-
-
 - Forwarding refers to determining the route taken by packets from source to destination, and is implemented in the data plane.  
-
-
 - Routing refers to moving packets from a router’s input to appropriate router output, and is implemented in the data plane.  
+
 
 # 5.1-2 APPROACHES TOWARDS IMPLEMENTING THE CONTROL PLANE.
 
@@ -2499,42 +2186,28 @@ Match the name of the approach towards implementing a control plane with a descr
 - Software-defined networking (SDN).
     - ```A (typically) remote controller gathers information from routers, and then computes and installs the forwarding tables in routers.```
 
+
 # 5.2-1 WHAT’S A “GOOD” PATH?
 
 What is the definition of a “good” path for a routing protocol? Chose the best single answer.
 
-
 - ```Routing algorithms typically work with abstract link weights that could represent any of, or combinations of, all of the other answers.```
-
-
 - A high bandwidth path.
-
-
 - A low delay path.
-
-
 - A path that has little or no congestion.
-
-
 - A path that has a minimum number of hops.
+
 
 # 5.2-2 DIJKSTRA’S LINK-STATE ROUTING ALGORITHM.
 
 Consider Dijkstra’s link-state routing algorithm that is computing a least-cost path from node a to other nodes b, c, d, e,  f.  Which of the following statements is true.  (Refer to Section 5.2 in the text for notation.)
 
 - ```The values computed in the vector D(v), the currently known least cost of a path from a to any node v, will never increase following an iteration.```
-
-
 - ```In the initialization step, the initial cost from a to each of these destinations is initialized to either the cost of a link directly connecting a to a direct neighbor, or infinity otherwise.```
-
-
 - The values computed in the vector D(v), the currently known least cost of a path from a to any node v, will always decrease following an iteration.
-
-
 - ```Suppose nodes b, c, and d are in the set N’.  These nodes will remain in N’ for the rest of the algorithm, since the least-cost paths from a to b, c, and d are known.```
-
-
 - Following the initialization step, if nodes b and c are directly connected to a, then the least cost path to b and c will never change from this initial cost.
+
 
 # 5.2-3 WHAT TYPE OF ROUTING?
 
@@ -2549,6 +2222,7 @@ Match the name of a general approach to routing with characteristics of that app
 - Dynamic routing.
     - ```Routing changes quickly over time.```
 
+
 # 5.2-4 DIJKSTRA’S LINK-STATE ROUTING ALGORITHM (PART 1).
 
 Consider the graph shown below and the use of Dijkstra’s algorithm to compute a least cost path from a to all destinations.  Suppose that nodes b and d have already been added to N’. What is the next node to be added to N' (refer to the text for an explanation of notation).
@@ -2556,10 +2230,9 @@ Consider the graph shown below and the use of Dijkstra’s algorithm to compute 
 ![5.2.4](./chapter5photo/5.2.4.png)
 
 - c
-
 - ```e```
-
 - f
+
 
 # 5.2-5 DIJKSTRA’S LINK-STATE ROUTING ALGORITHM (PART 2).
 
@@ -2568,12 +2241,10 @@ Consider the graph shown below and the use of Dijkstra’s algorithm to compute 
 ![5.2.4](./chapter5photo/5.2.4.png)
 
 - 5
-
 - 6
-
 - 7
-
 - ```4```
+
 
 # 5.3-1 ROUTING WITHIN OR AMONG NETWORKS.
 
@@ -2584,68 +2255,42 @@ Match the terms "interdomain routing" and intradomain routing" with their defini
 - Intradomain routing.
     - ```Routing among routers within same AS (“network”).```
 
+
 # 5.3-2 OPEN SHORTEST PATH FIRST (OSPF).
 
 Check the one or more of the following statements about the OSPF protocol that are true.
 
 - The Open Shortest Path First (OSPF) Internet routing protocol implements a Bellman-Ford distance-vector routing algorithm.
-
-
 - ```OSPF implements hierarchical routing```
-
-
 - OSPF is an interdomain routing protocol.
-
-
 - ```OSFP uses a Dijkstra-like algorithm to implement least cost path routing.```
-
-
 - ```OSPF is an intra-domain routing protocol.```
+
 
 # 5.3-3 OPEN SHORTEST PATH FIRST (OSPF).
 
 Consider the OSPF routing protocol.  Which of the following characteristics are associated with OSPF (as opposed to BGP)?
 
 - Is an inter-domain routing protocol.
-
-
 - Policy, rather than performance (e.g., least cost path), determines paths that used.
-
-
 - ```Finds a least cost path from source to destination.```
-
-
 - ```Is an intra-domain routing protocol.```
-
-
 - ```Floods link state control information.```
+
 
 # 5.4-1 ROUTING WITHIN NETWORKS?
 
 Among the following protocols, terminology or considerations, indicate those that are associated with "routing within a single network (typically owned and operated by one organization)."  
 
 - ```intra-AS routing```
-
-
 - Driven more by routing policy than end-end routing performance
-
-
 - inter-domain routing
-
-
 - ```intra-domain routing```
-
-
 - ```OSPF```
-
-
 - BGP
-
-
 - ```Driven more by performance than by routing policy```
-
-
 - inter-AS routing
+
 
 # 5.4-2 PATH ADVERTISEMENT AND POLICY (PART 1).
 
@@ -2654,12 +2299,10 @@ Suppose a provider network only wants to carry traffic to/from its customer netw
 ![5.4.2](./chapter5photo/5.4.2.jpg)
 
 - w
-
 - ```B```
-
 - ```A```
-
 - ```x```
+
 
 # 5.4-3 PATH ADVERTISEMENT AND POLICY (PART 2).
 
@@ -2668,12 +2311,10 @@ Again, suppose a provider network only wants to carry traffic to/from its custom
 ![5.4.2](./chapter5photo/5.4.2.jpg)
 
 - x
-
 - C
-
 - ```w```
-
 - B
+
 
 # 5.4-4 PATH ADVERTISEMENT AND POLICY (PART 3).
 
@@ -2681,20 +2322,12 @@ Again, suppose a provider network only wants to carry traffic to/from its custom
 
 ![5.4.2](./chapter5photo/5.4.2.jpg)
 
-
 - B
-
-
 - ```None of these other networks```
-
-
 - C
-
-
 - w
-
-
 - A
+
 
 # 5.4-5 EBGP OR IBGP?
 
@@ -2704,9 +2337,9 @@ Consider routers 2c and 2d in Autonomous System AS2 in the figure below. Indicat
 
 - How does router 2c learn of the path AS3, X to destination network X?
     - ```From 3a via eBGP.```
-
 - How does router 2d learn of the path AS3, X to destination network X?
     - ```From 2c via iBGP.```
+
 
 # 5.5-1 SDN LAYERS.
 
@@ -2716,10 +2349,8 @@ Consider the SDN layering shown below.  Match each layer name below with a layer
 
 - SDN Controller (network operating system)
     - ```(b)```
-
 - SDN-controlled switches
     - ```(c)```
-
 - Network-control applications
     - ```(a)```
 
@@ -2731,27 +2362,14 @@ Which of the functions below belong in the controller layer labeled "Interface, 
 ![5.5.2](./chapter5photo/5.5.2.jpg)
 
 - Statistics
-
-
 - ```Network graph```
-
-
 - Link-state information
-
-
 - OpenFlow protocol
-
-
 - ```Intent```
-
-
 - Flow tables
-
-
 - Switch information
-
-
 - Host information
+
 
 # 5.5-3 INTERNAL STRUCTURE OF THE SDN CONTROLLER (2).
 
@@ -2760,26 +2378,14 @@ Which of the functions below belong in the controller layer labeled "Network-wid
 ![5.5.2](./chapter5photo/5.5.2.jpg)
 
 - Intent
-
-
 -  Link-state information
-
 -  Host information
-
-
 -  Flow tables
-
-
 -  Switch information
-
-
 -  OpenFlow protocol
-
-
 -  Statistics
-
-
 -  Network graph
+
 
 # 5.5-4 INTERNAL STRUCTURE OF THE SDN CONTROLLER (3).
 
@@ -2788,43 +2394,22 @@ Which of the functions below belong in the controller layer labeled "Communicati
 ![5.5.2](./chapter5photo/5.5.2.jpg)
 
 - Intent
-
-
 -  Link-state information
-
 -  Host information
-
-
 -  Flow tables
-
-
 -  Switch information
-
-
 -  OpenFlow protocol
-
-
 -  Statistics
-
-
 -  Network graph
 
-# 5.6-1 ICMP: INTERNET CONTROL MESSAGE PROTOCOL.
 
+# 5.6-1 ICMP: INTERNET CONTROL MESSAGE PROTOCOL.
 
 Which of the statements below about ICMP are true?
 
 - ICMP communicates information between hosts and routers by marking bits in the IP header.
-
-
 - ```ICMP is used by hosts and routers to communicate network-level information.```
-
-
 - ICMP messages are carried in UDP segments using port number 86.
-
-
 - ```The TTL-expired message type in ICMP is used by the traceroute program.```
-
-
 - ```ICMP messages are carried directly in IP datagrams rather than as payload in UDP or TCP segments.```
 
