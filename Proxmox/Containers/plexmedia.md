@@ -1,3 +1,8 @@
+# Table of content
+- [Installation](#installation)
+- [plugin](#plugin)
+
+<a id='installation'>
 # Installation of Plex in container
 
 ## This instruction is same as intalling in debian or ubuntu linux
@@ -25,3 +30,12 @@ echo deb [signed-by=/usr/share/keyrings/plex-archive-keyring.gpg] https://downlo
 sudo apt update
 apt install plexmediaserver
 ```
+
+---
+<a id='plugin'>
+# Add plugin
+```
+/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
+```
+- move the folder with plug-in to the file
+- cp /mnt/media/zPlexPlugin/DaumMovie.bundle ./
