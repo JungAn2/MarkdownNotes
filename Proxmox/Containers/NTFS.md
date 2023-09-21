@@ -26,4 +26,8 @@ apt install nfs-common
   ```
   192.168.x.x:/{nftsServerDirectory}   /mnt/{MountPointDirectory}   nfs   defaults	0 0
   ```
+  ```
+  Note:
+  - To add space inside fstabe add \040
+  ```
 - Restart the Container
