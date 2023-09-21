@@ -39,4 +39,9 @@ apt install plexmediaserver
 cd /var/lib/plexmediaserver/Library/Application\ Support/Plex\ Media\ Server/Plug-ins
 ```
 - move the folder with plug-in to the file
-- cp -r /mnt/media/zPlexPlugin/DaumMovie.bundle ./
+```
+cp -r /mnt/media/zPlexPlugin/DaumMovie.bundle ./
+```
+```
+systemctl restart plexmediaserver.service
+```
