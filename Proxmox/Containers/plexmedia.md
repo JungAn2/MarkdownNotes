@@ -2,7 +2,7 @@
 - [Installation](#installation)
 - [plugin](#plugin)
 
-<a id='installation'>
+<a id='installation'></a>
 # Installation of Plex in container
 
 ## This instruction is same as intalling in debian or ubuntu linux
@@ -32,7 +32,8 @@ apt install plexmediaserver
 ```
 
 ---
-<a id='plugin'>
+
+<a id='plugin'></a>
 # Add plugin
 ```
 /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
