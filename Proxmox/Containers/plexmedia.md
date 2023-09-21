@@ -7,38 +7,21 @@
 ### Root account
 ```
 apt update
-```
-```
 apt install curl
-```
-```
 curl https://downloads.plex.tv/plex-keys/PlexSign.key | gpg --dearmor | tee /usr/share/keyrings/plex-archive-keyring.gpg >/dev/null
-```
-```
 echo deb [signed-by=/usr/share/keyrings/plex-archive-keyring.gpg] https://downloads.plex.tv/repo/deb public main | tee /etc/apt/sources.list.d/plex.list
-```
-```
 apt update
-```
-```
 apt install plexmediaserver
 ```
+
+---
+
 ### sudo account
 ```
 sudo apt update
-```
-```
 sudo apt install curl
-```
-```
 curl https://downloads.plex.tv/plex-keys/PlexSign.key | gpg --dearmor | sudo tee /usr/share/keyrings/plex-archive-keyring.gpg >/dev/null
-```
-```
 echo deb [signed-by=/usr/share/keyrings/plex-archive-keyring.gpg] https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plex.list
-```
-```
 sudo apt update
-```
-```
 apt install plexmediaserver
 ```
