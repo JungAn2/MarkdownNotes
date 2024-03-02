@@ -1,4 +1,4 @@
-# Setting up NTFS for proxmox container Debian 11
+# Setting up NFS for proxmox container Debian 11
 
 reference from
 
