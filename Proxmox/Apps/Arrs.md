@@ -25,7 +25,7 @@ sudo apt install curl sqlite3
 > at this point create a user with prowlarr and a prowlarr.
 > Depending no what debian you have you mght have to install adduser
 ``` bash
-sudo apt-et install aduser
+sudo apt-get install aduser
 ```
 
 > This will automatically create a group called the user
